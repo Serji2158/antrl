@@ -1,0 +1,107 @@
+.feedbacks {
+  margin-bottom: 64px;
+
+  .section-position {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      column-gap: 20px;
+    }
+  }
+  .section-content {
+    @media screen and (min-width: 768px) {
+      width: 367px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 429px;
+    }
+
+    .section-name {
+      @extend %sectionName;
+      margin-bottom: 24px;
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 32px;
+      }
+    }
+    .section-title {
+      width: 305px;
+      margin-bottom: 16px;
+      @extend %sectionTitle;
+      @media screen and (min-width: 768px) {
+        width: 244px;
+      }
+    }
+    .section-text {
+      @extend %sectionText;
+      margin-bottom: 16px;
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .carousel {
+    &.desktop {
+      display: none;
+      @media screen and (min-width: 1200px) {
+        display: block;
+        width: 879px;
+      }
+    }
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 367px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+
+    &-item {
+      .reviews {
+        display: flex;
+        // flex-direction: column;
+        // row-gap: 16px;
+
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+          column-gap: 20px;
+        }
+
+        .review {
+          position: relative;
+
+          height: 316px;
+          padding: 20px 24px;
+          background: #f4ebdf;
+
+          @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 20px) / 2);
+          }
+
+          .review-icon {
+            margin-bottom: 16px;
+            fill: rgba(33, 42, 53, 0.405);
+          }
+
+          .review-text {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #171717;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        //  margin-left: 20px;
+        @media screen and (min-width: 1200px) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

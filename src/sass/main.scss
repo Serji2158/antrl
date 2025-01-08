@@ -1,0 +1,19 @@
+@import 'base/fonts';
+@import 'base/reset';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+@import 'base/container';
+@import 'base/typography';
+@import 'layout/header';
+// @import 'components/slider';
+
+@import 'components/hero';
+@import 'components/mob-menu';
+@import 'components/about';
+@import 'components/bathroom';
+@import 'components/kitchen';
+@import 'components/oneday';
+@import 'components/reviews';
+@import 'components/contacts';
+@import 'layout/footer';

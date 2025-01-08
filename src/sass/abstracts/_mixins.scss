@@ -1,0 +1,12 @@
+@mixin button($width, $background-color, $color) {
+    display: block;
+  width: $width;
+  height: 54px;
+  border-radius: 30px;
+  outline: 1px solid #212a35;
+  background-color: $background-color;
+  padding: 16px 24px;
+  color: $color;
+  font-size: 16px;
+  line-height: 1.4;
+}

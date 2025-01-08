@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANT-Remodel</title>
+    <link rel="icon" href="#" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css" integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+    <link rel="stylesheet" href="/main.07544d9b.css">
+  <script src="/main.07544d9b.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-position">
+          <div class="logo-wrap">
+            <button type="button" class="menu-open">
+              <svg width="24" height="24" class="burger-icon">
+                <use xlink:href="/symbol-defs.de9c78db.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+            <a href="/" class="logo">ANT <br>
+              REMODEL</a>
+          </div>
+
+          <nav class="nav">
+            <ul class="menu-one">
+              <li class="menu-item">
+                <a href="#about" class="menu-link">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="#review" class="menu-link">Review</a>
+              </li>
+              <li class="menu-item">
+                <a href="#contact" class="menu-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="menu-two">
+              <li class="menu-item">
+                <a href="#bathroom" class="menu-link">Bathroom remodelling</a>
+              </li>
+              <li class="menu-item">
+                <a href="#kitchen" class="menu-link">Kitchen remodelling</a>
+              </li>
+              <li class="menu-item">
+                <a href="#oneday" class="menu-link">Bathroom in one day</a>
+              </li>
+            </ul>
+            <a href="#contact" class="header-link">
+              <span class="header-link-text">Free estimate</span>
+              <span class="header-link-arrow">
+                <svg width="19" height="19" class="icon-arrow-white">
+                  <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </nav>
+        </div>
+        <section class="hero">
+          <h1 class="hero-title">
+            Bathroom remodelling created for your family’s comfort
+          </h1>
+          <!-- <div
+            id="carouselExampleSlidesOnly"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="hero-title">
+                  Bathroom remodelling created for your family’s comfort
+                </h1>
+                <img src="https://images.pexels.com/photos/7587873/pexels-photo-7587873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <h1 class="hero-title">
+                  Bathroom remodelling created for your family’s comfort
+                </h1>
+                <img src="https://images.pexels.com/photos/7587873/pexels-photo-7587873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <h1 class="hero-title">
+                  Bathroom remodelling created for your family’s comfort
+                </h1>
+                <img src="https://images.pexels.com/photos/7587873/pexels-photo-7587873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div> -->
+        </section>
+      </div>
+      <!-- The mobile-menu -->
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-container">
+          <div class="mob-menu-header">
+            <p class="mob-menu-logo">ANT Remodel</p>
+            <button type="button" class="btn-close">
+              <svg width="15" height="15">
+                <use href="/symbol-defs.de9c78db.svg#icon-close-btn-white"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="#about" class="mob-menu-link">About</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#bathroom" class="mob-menu-link">Bathroom remodelling</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#kitchen" class="mob-menu-link">Kitchen remodelling</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#oneday" class="mob-menu-link">Bathroom in one day</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#review" class="mob-menu-link">Reviews</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="#contact" class="mob-menu-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- CUSTOM SLIDER -->
+    <!-- <header>
+       <div class="slider" style='height: 80vh;'>
+        <div class="slider-container" style='height: 100%;'>
+          <div class="slide" style="background-image: url('https://images.pexels.com/photos/7587873/pexels-photo-7587873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <h1 class="hero-title">Transform your bathroom with expert remodelling service1</h1>
+            <p>Опис першого слайда</p>
+          </div>
+          <div class="slide" style="background-image: url('https://images.pexels.com/photos/15062162/pexels-photo-15062162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr')">
+            <h1 class="hero-title">Transform your bathroom with expert remodelling service1 2</h1>
+            <p>Опис другого слайда</p>
+          </div>
+          <div class="slide" style="background-image: url('https://images.pexels.com/photos/7587873/pexels-photo-7587873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+            <h1 class="hero-title">Transform your bathroom with expert remodelling service1 3</h1>
+            <p>Опис третього слайда</p>
+          </div>
+        </div>
+        <button class="btn prev">❮</button>
+        <button class="btn next">❯</button>
+      </div>
+    </header> -->
+
+    <main>
+      <!-- Hero section -->
+      <!-- <section class="hero">
+        <div class="container hero-position">
+          <h1 class="hero-title">
+            Transform your bathroom with expert remodelling service
+          </h1>
+          <a href="#contact" class="hero-link">Free estimate</a>
+        </div>
+      </section> -->
+      <!-- About us -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="content-box">
+            <div class="section-content">
+              <h2 class="section-name">About us</h2>
+              <h3 class="section-title">
+                Dreaming of a home upgrade that perfectly fits your lifestyle?
+              </h3>
+            </div>
+            <div class="section-info">
+              <p class="section-text">
+                We make it happen. With over 20 years of experience, our team
+                specializes in delivering reliable and efficient remodeling
+                services. We focus on creating practical, stylish spaces that
+                meet your needs and exceed your expectations
+              </p>
+              <a href="#contact" class="contact-link">
+                <span class="contact-link-estimate">Contact us</span>
+                <span class="contact-link-arrow">
+                  <svg width="19" height="19" class="icon-arrow-white">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <!-- Our advantages -->
+          <ul class="adv-list">
+            <li class="adv-item">
+              <svg class="adv-icon" width="62" height="65">
+                <use xlink:href="/symbol-defs.de9c78db.svg#icon-prof-team"></use>
+              </svg>
+              <h3 class="adv-name">Professional Team</h3>
+              <p class="adv-text">
+                Our team brings years of hands-on expertise to every project,
+                ensuring results that meet the highest standards of quality and
+                reliability.
+              </p>
+            </li>
+            <li class="adv-item">
+              <svg class="adv-icon" width="64" height="64">
+                <use xlink:href="/symbol-defs.de9c78db.svg#icon-clock"></use>
+              </svg>
+              <h3 class="adv-name">Fast & Free estimates</h3>
+              <p class="adv-text">
+                Get the clarity you need with a quick, free estimate, and
+                confidently plan your remodel without any delays.
+              </p>
+            </li>
+            <li class="adv-item">
+              <svg class="adv-icon" width="64" height="64">
+                <use xlink:href="/symbol-defs.de9c78db.svg#icon-cycle"></use>
+              </svg>
+              <h3 class="adv-name">Full-Cycle remodeling</h3>
+              <p class="adv-text">
+                From initial consultation and design to construction and final
+                touches, we manage every step of the process.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Our service - Bathroom remodeling -->
+      <section id="bathroom" class="bathroom">
+        <div class="container">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="section-name">Service</h2>
+              <h3 class="section-title">Bathroom remodelling</h3>
+              <p class="section-text">
+                Is your bathroom feeling outdated or no longer meeting your
+                needs? Refresh it with a design that prioritizes functionality
+                and style. Whether you’re looking to improve comfort, update the
+                look, or create a space that better suits your lifestyle, our
+                remodeling services are designed to transform your bathroom into
+                a place you’ll love.
+              </p>
+              <a href="#contact" class="estimate-link">
+                <span class="estimate-link-est">Free estimate</span>
+                <span class="estimate-link-arrow">
+                  <svg width="19" height="19" class="icon-arrow-black">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <figure class="section-img-box">
+              <picture>
+                <source srcset="/S1_2x-min.3f0822dc.jpeg 2x,/S1_1x-min.0579a246.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S1_tablet_2x-min.bd9e4f6c.jpeg 2x,/S1_tablet_1x-min.db25386c.jpeg 1x" media="(min-width: 768px)">
+                
+                <img src="/S1_1x-min.0579a246.jpeg" alt="">
+              </picture>
+              <!-- <img src="./images/S1_1x-min.jpeg" width="765" alt="" /> -->
+              <!-- <figcaption class="section-img-title">Project name</figcaption> -->
+            </figure>
+          </div>
+          <ul class="examples">
+            <li class="example">
+             
+              <picture>
+                <source srcset="/S1.1_2x-min.75fde22c.jpeg 2x,/S1.1_1x-min.df589e90.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S1.1_tablet_2x-min.4bfa9ec6.jpeg 2x,/S1.1_tablet_1x-min.adf12bc5.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S1.1_mobile_2x-min.6fcd0d3b.jpeg 2x,/S1.1_mobile_1x-min.7b56c864.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S1.1_1x-min.df589e90.jpeg" alt="">
+              </picture>
+             
+            </li>
+            <li class="example">
+              
+              <picture>
+                <source srcset="/S1.2_2x-min.99ecee26.jpeg 2x,/S1.2_1x-min.1c5a07a1.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S1.2_tablet_2x-min.316aa15b.jpeg 2x,/S1.2_tablet_1x-min.3d9ec85d.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S1.2_mobile_2x-min.cbbfc626.jpeg 2x,/S1.2_mobile_1x-min.69883f00.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S1.2_1x-min.1c5a07a1.jpeg" alt="">
+              </picture>
+              
+            </li>
+            <li class="example">
+             
+              <picture>
+                <source srcset="/S1.3_2x-min.2a39b8b0.jpeg 2x,/S1.3_1x-min.6f22be7d.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S1.3_tablet_2x-min.214ff75b.jpeg 2x,/S1.3_tablet_1x-min.4a3148aa.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S1.3_mobile_2x-min.021460ad.jpeg 2x,/S1.3_mobile_1x-min.52efcc5f.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S1.3_1x-min.6f22be7d.jpeg" alt="">
+              </picture>
+             
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Our service - Kitchen remodeling -->
+      <section id="kitchen" class="kitchen">
+        <div class="container">
+          <div class="service-box">
+            <figure class="section-img-box">
+              <picture>
+                <source srcset="/S2_2x-min.5b50de99.jpeg 2x,/S2_1x-min.e77cf802.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S2_tablet_2x-min.1b06f216.jpeg 2x,/S2_tablet_1x-min.a2a17d8f.jpeg 1x" media="(min-width: 768px)">
+                <!-- <source
+                  srcset="
+                    ./images/mobile/img@2xt1-min.jpg 2x,
+                    ./images/mobile/imgt4-min.jpg    1x
+                  "
+                  media="(min-width: 480px)"
+                /> -->
+                <img src="/S2_1x-min.e77cf802.jpeg" alt="">
+              </picture>
+              <!-- <img src="./images/desktop/S2_1x-min.jpeg" alt="" width="765" /> -->
+              <!-- <figcaption class="section-img-title">Project name</figcaption> -->
+            </figure>
+            <div class="service-content">
+              <h2 class="section-name">Service</h2>
+              <h3 class="section-title">Kitchen remodelling</h3>
+              <p class="section-text">
+                From optimizing storage and updating appliances to enhancing the
+                overall design, we focus on customizing every detail to suit
+                your needs. Our team ensures that your kitchen will be a perfect
+                blend of efficiency and style, designed to fit seamlessly into
+                your lifestyle.
+              </p>
+              <a href="#contact" class="estimate-link">
+                <span class="estimate-link-est">Free estimate</span>
+                <span class="estimate-link-arrow">
+                  <svg width="19" height="19" class="icon-arrow-black">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+          <ul class="examples">
+            <li class="example">
+              
+              <picture>
+                <source srcset="/S2.1_2x-min.466f6cdb.jpeg 2x,/S2.1_1x-min.ea57a984.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S2.1_tablet_2x-min.03924c5f.jpeg 2x,/S2.1_tablet_1x-min.327d450b.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S2.1_mobile_2x-min.7732c127.jpeg 2x,/S2.1_mobile_1x-min.ffcd61a1.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S2.1_1x-min.ea57a984.jpeg" alt="">
+              </picture>
+              
+            </li>
+            <li class="example">
+            
+              <picture>
+                <source srcset="/S2.2_2x-min.edb9df09.jpeg 2x,/S2.2_1x-min.7d766765.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S2.2_tablet_2x-min.9b004045.jpeg 2x,/S2.2_tablet_1x-min.a9ec2b3e.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S2.2_mobile_2x-min.d2b93bdb.jpeg 2x,/S2.2_mobile_1x-min.748c20a6.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S2.2_1x-min.7d766765.jpeg" alt="">
+              </picture>
+             
+            </li>
+            <li class="example">
+             
+              <picture>
+                <source srcset="/S2.3_2x-min.05177692.jpeg 2x,/S2.3_1x-min.508308ea.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S2.3_tablet_2x-min.958e6948.jpeg 2x,/S2.3_tablet_1x-min.0785f046.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S2.3_mobile_2x-min.cdefaca3.jpeg 2x,/S2.3_mobile_1x-min.b85e41ba.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S2.3_1x-min.508308ea.jpeg" alt="">
+              </picture>
+             
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Our service - Bathroom in one day -->
+      <section id="oneday" class="oneday">
+        <div class="container">
+          <div class="service-box">
+            <div class="service-content">
+              <h2 class="section-name">Service</h2>
+              <h3 class="section-title">Bathroom in one day</h3>
+              <p class="section-text">
+                Don’t wait for weeks to enjoy your dream bathroom. Our fast,
+                efficient service ensures that your bathroom gets a complete
+                makeover in a short time, without sacrificing quality. We focus
+                on delivering a beautifully designed, practical space that fits
+                your lifestyle, ensuring a smooth and hassle-free renovation
+                experience.
+              </p>
+              <a href="#contact" class="estimate-link">
+                <span class="estimate-link-est">Free estimate</span>
+                <span class="estimate-link-arrow">
+                  <svg width="19" height="19" class="icon-arrow-black">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <figure class="section-img-box">
+              <picture>
+                <source srcset="/S3_2x-min.6cec784c.jpeg 2x,/S3_1x-min.2737e720.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S3_tablet_2x-min.3f022019.jpeg 2x,/S3_tablet_1x-min.a690ccfb.jpeg 1x" media="(min-width: 768px)">
+               
+                <img src="/S3_1x-min.2737e720.jpeg" alt="">
+              </picture>
+              <!-- <img src="./images/S3_1x-min.jpeg" alt="" width="765" /> -->
+              <!-- <figcaption class="section-img-title">Project name</figcaption> -->
+            </figure>
+          </div>
+          <ul class="examples">
+            <li class="example">
+            
+              <picture>
+                <source srcset="/S3.1_2x-min.53d86e73.jpeg 2x,/S3.1_1x-min.e14ce6bc.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S3.1_tablet_2x-min.00b766ad.jpeg 2x,/S3.1_tablet_1x-min.64297f77.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S3.1_mobile_2x-min.46cba08f.jpeg 2x,/S3.1_mobile_1x-min.af42657c.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S3.1_1x-min.e14ce6bc.jpeg" alt="">
+              </picture>
+           
+            </li>
+            <li class="example">
+             
+              <picture>
+                <source srcset="/S3.2_2x-min.026174d2.jpeg 2x,/S3.2_1x-min.cd5589f4.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S3.2_tablet_2x-min.f2868c06.jpeg 2x,/S3.2_tablet_1x-min.8365acdc.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S3.2_mobile_2x-min.dd33b8f6.jpeg 2x,/S3.2_mobile_1x-min.dc487cfb.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S3.2_1x-min.cd5589f4.jpeg" alt="">
+              </picture>
+             
+            </li>
+            <li class="example">
+              
+              <picture>
+                <source srcset="/S3.3_2x-min.f4948b70.jpeg 2x,/S3.3_1x-min.fd6372b8.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/S3.3_tablet_2x-min.2acb997a.jpeg 2x,/S3.3_tablet_1x-min.51507f0b.jpeg 1x" media="(min-width: 768px)">
+                <source srcset="/S3.3_mobile_2x-min.28b8a946.jpeg 2x,/S3.3_mobile_1x-min.4290ca6d.jpeg 1x" media="(min-width: 480px)">
+                <img src="/S3.3_1x-min.fd6372b8.jpeg" alt="">
+              </picture>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- The reviews section -->
+      <section id="review" class="feedbacks">
+        <div class="container section-position">
+          <div class="section-content">
+            <h2 class="section-name">Reviews</h2>
+            <h3 class="section-title">Reputation is everything</h3>
+            <p class="section-text">
+              Our clients’ feedback highlights our reputation for reliability,
+              ensuring every project is completed to the highest standards. We
+              take pride in delivering results that exceed expectations.
+            </p>
+          </div>
+          <!-- The slider of reviews -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Andrew did a great job converting our dark, decrepit old
+                      closet under the stairs into a beautiful powder room! He
+                      was timely, communicative, polite, and even affordable.
+                    </p>
+
+                    <p class="review-author">
+                      Alan P. <span>Dec 9, 2024</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Andrew was very communicative. He showed up when he said
+                      he would and responds quickly. He's been our home
+                      continually doing work for last 3 weeks and we are
+                      pleased.
+                    </p>
+                    <p class="review-author">Vi J. <span>Mar 16, 2024</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Was professional and did a good job for a good price. I'm
+                      happy with finished project.
+                    </p>
+
+                    <p class="review-author">
+                      Christine P. <span>Mar 7, 2024</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      I've hired Andrew for several projects. He does excellent
+                      work and is very efficient. He will work within your
+                      budget and has a very wide skill set. Thank you Andrew!!
+                    </p>
+                    <p class="review-author">
+                      Reuben B. <span>Dec 9, 2023</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Very personable and professional. Great quality work also.
+                      Looking forward to hiring foe additional jobs.
+                    </p>
+                    <p class="review-author">
+                      Stacia L. <span>Apr 22, 2024</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Andrew showed up on time to give an estimate, and was
+                      prepared to work if given the job. Once we agreed on what
+                      needed to be done as well as a price, he completed the
+                      job. He completed several tasks at a fair price.
+                    </p>
+
+                    <p class="review-author">
+                      Tammy S. <span>Oct 7, 2023</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- The slider of reviews FOR DESKTOP-->
+          <div id="carouselExampleSlidesOnly" class="carousel slide desktop" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Andrew did a great job converting our dark, decrepit old
+                      closet under the stairs into a beautiful powder room! He
+                      was timely, communicative, polite, and even affordable.
+                    </p>
+                    <!-- Need to paste the pseudo-element(line) here -->
+                    <p class="review-author">
+                      Alan P. <span>Dec 9, 2024</span>
+                    </p>
+                  </li>
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Andrew was very communicative. He showed up when he said
+                      he would and responds quickly. He's been our home
+                      continually doing work for last 3 weeks and we are
+                      pleased.
+                    </p>
+                    <p class="review-author">Vi J. <span>Mar 16, 2024</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Was professional and did a good job for a good price. I'm
+                      happy with finished project.
+                    </p>
+                    <!-- Need to paste the pseudo-element(line) here -->
+                    <p class="review-author">
+                      Christine P. <span>Mar 7, 2024</span>
+                    </p>
+                  </li>
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Very personable and professional. Great quality work also.
+                      Looking forward to hiring foe additional jobs.
+                    </p>
+                    <p class="review-author">
+                      Stacia L. <span>Apr 22, 2024</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      I've hired Andrew for several projects. He does excellent
+                      work and is very efficient. He will work within your
+                      budget and has a very wide skill set. Thank you Andrew!!
+                    </p>
+                    <p class="review-author">
+                      Reuben B. <span>Dec 9, 2023</span>
+                    </p>
+                  </li>
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use xlink:href="/symbol-defs.de9c78db.svg#icon-quote"></use>
+                    </svg>
+                    <p class="review-text">
+                      Andrew showed up on time to give an estimate, and was
+                      prepared to work if given the job. Once we agreed on what
+                      needed to be done as well as a price, he completed the
+                      job. He completed several tasks at a fair price.
+                    </p>
+
+                    <p class="review-author">
+                      Tammy S. <span>Oct 7, 2023</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The contact section -->
+      <section id="contact" class="contacts">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-img">
+              <picture>
+                <source srcset="/Last_2x-min.7994857c.jpeg 2x,/Last_1x-min.f35bb0b8.jpeg 1x" media="(min-width: 1200px)">
+                <source srcset="/Last_tablet_2x-min.4a24e9c8.jpeg 2x,/Last_tablet_1x-min.9040d698.jpeg 1x" media="(min-width: 768px)">
+                <!-- <source
+                  srcset="
+                    ./images/mobile/img@2xt1-min.jpg 2x,
+                    ./images/mobile/imgt4-min.jpg    1x
+                  "
+                  media="(min-width: 480px)"
+                /> -->
+                <img src="/Last_1x-min.f35bb0b8.jpeg" alt="">
+              </picture>
+              <!-- <img src="./images/desktop/Last_1x-min.jpeg" alt="" /> -->
+            </div>
+            <!--Contacts form  -->
+            <div class="contact-content">
+              <h2 class="section-name">Contact us</h2>
+              <h3 class="section-title">Get your free estimate!</h3>
+              <p class="section-text">
+                Tell us about your project, and we’ll come to you to provide an
+                accurate estimate. Take the first step towards bringing your
+                ideas to life with a free of charge consultation.
+              </p>
+              <form class="form" id="form">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" required="" placeholder="Name*" class="form-input">
+                <label for="phone"></label>
+                <input type="tel" name="phone" id="phone" required="" placeholder="Phone*" class="form-input">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" required="" placeholder="Email*" class="form-input">
+                <!-- <label for="comments"></label> -->
+                <textarea placeholder="Message*" name="comments" id="comments" required="" class="form-area">
+                </textarea>
+                <div class="policy-wrap">
+                  <input type="checkbox" class="checkbox" id="input-check">
+                  <label for="input-check" class="checkbox-label">
+                    <span class="checkbox-span">
+                      <svg class="" width="11" height="8">
+                        <use href=""></use>
+                      </svg>
+                    </span>
+                    By submitting my data, I confirm that I have read and
+                    understood the Ant Remodel  &nbsp;<a class="policy-link" href="">Privacy Policy.</a>
+                    and <a class="policy-link" href="">Terms of Service.</a>
+                  </label>
+                </div>
+
+                <button class="form-button" id="form-button" disabled="">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <a href="" class="logo">ANT.<br>CONSTRUCTION</a>
+
+          <div class="footer-menu-wrap">
+            <h2 class="footer-menu-title">Menu</h2>
+            <ul class="footer-menu-list">
+              <li class="footer-menu-item">
+                <a href="" class="footer-menu-link">About</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="" class="footer-menu-link">Reviews</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="" class="footer-menu-link">Services</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="" class="footer-menu-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts-wrap">
+            <h2 class="footer-contacts-title">Contacts</h2>
+            <address class="footer-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <a href="tel:+12679925394" class="footer-address-link">+1 (267) 992 53 94</a>
+                </li>
+                <li class="footer-address-item">
+                  <a href="mailto:example@gmail.com" class="footer-address-link">antremodel@gmail.com</a>
+                </li>
+                <li class="footer-address-item">
+                  <a href="https://maps.app.goo.gl/avFD3hs6utwHpwQN9" class="footer-address-link" target="_blank">410 Central Avenue, Cheltenham 19012, Pennsylvania USA</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-socials-wrap">
+            <h2 class="footer-socials-title">Social media</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="https://www.facebook.com/share/1B5FXYAU7a/?mibextid=wwXIfr" class="footer-social-link" target="_blank">Facebook
+                  <svg class="black-arrow-icon">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link" target="_blank">Instagram
+                  <svg class="black-arrow-icon">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="footer-social-link" target="_blank">Tik Tok
+                  <svg class="black-arrow-icon">
+                    <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-scroll-wrap">
+            <a href="#" class="footer-scroll-link">
+              <svg class="footer-scroll-icon" width="24" height="24">
+                <use xlink:href="/symbol-defs.de9c78db.svg#icon-arrow-up"></use>
+              </svg>
+              Scroll up
+            </a>
+          </div>
+        </div>
+        <ul class="privacy-list">
+          <li class="privacy-item">
+            <a href="#" class="privacy-link">Privacy Policy</a>
+          </li>
+          <li class="privacy-item">
+            <a href="#" class="privacy-link">Terms of Service.</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="./js/slider.js" type="module"></script> -->
+    <script src="/menu.0c91648c.js" type="module"></script>
+
+    <script src="/email.9715068f.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: '-jrsFZRcGfNUdSTLV',
+        });
+      })();
+    </script> -->
+  </body>
+</html>

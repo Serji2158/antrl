@@ -1,0 +1,49 @@
+%centeredFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%button {
+  display: block;
+  width: 156px;
+  height: 54px;
+  border-radius: 30px;
+  outline: 1px solid #212a35;
+  // background-color: $background-color;
+  padding: 16px 24px;
+  color: #212a35;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+%buttonArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 54px;
+  border-radius: 50%;
+  outline: 1px solid #212a35;
+
+}
+
+%sectionName {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $primaryTextColor;
+  line-height: 1.4;
+}
+
+%sectionTitle {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: $primaryTextColor;
+}
+
+%sectionText {
+  font-size: 16px;
+  color: $primaryTextColor;
+  line-height: 1.4;
+}
