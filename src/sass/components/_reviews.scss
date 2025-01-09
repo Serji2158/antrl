@@ -52,7 +52,10 @@
         width: 879px;
       }
     }
-    width: 100%;
+    & {
+width: 100%;
+    }
+    
     @media screen and (min-width: 768px) {
       width: 367px;
     }
