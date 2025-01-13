@@ -173,6 +173,42 @@ address {
   line-height: 1.4;
 }
 
+.about .content-box .section-info .contact-link .contact-link-arrow, .header .header-position .nav .header-link .header-link-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneday .service-box .service-content .estimate-link .estimate-link-arrow, .kitchen .service-box .service-content .estimate-link .estimate-link-arrow, .bathroom .service-box .service-content .estimate-link .estimate-link-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 54px;
+  border-radius: 50%;
+  outline: 1px solid #212a35;
+}
+
+.contacts .contact-box .contact-content .section-name, .feedbacks .section-content .section-name, .oneday .service-box .service-content .section-name, .kitchen .service-box .service-content .section-name, .bathroom .service-box .service-content .section-name, .about .content-box .section-content .section-name {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #212A35;
+  line-height: 1.4;
+}
+
+.contacts .contact-box .contact-content .section-title, .feedbacks .section-content .section-title, .oneday .service-box .service-content .section-title, .kitchen .service-box .service-content .section-title, .bathroom .service-box .service-content .section-title, .about .content-box .section-content .section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #212A35;
+}
+
+.contacts .contact-box .contact-content .section-text, .feedbacks .section-content .section-text, .oneday .service-box .service-content .section-text, .kitchen .service-box .service-content .section-text, .bathroom .service-box .service-content .section-text, .about .content-box .section-info .section-text {
+  font-size: 16px;
+  color: #212A35;
+  line-height: 1.4;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -365,7 +401,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header .hero {
-    margin-top: 40vh;
+    margin-top: 50vh;
   }
 }
 .header .hero .hero-title {
@@ -1174,9 +1210,6 @@ body {
     margin-bottom: 24px;
   }
 }
-.feedbacks .carousel {
-  width: 100%;
-}
 .feedbacks .carousel.desktop {
   display: none;
 }
@@ -1185,6 +1218,9 @@ body {
     display: block;
     width: 879px;
   }
+}
+.feedbacks .carousel {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .feedbacks .carousel {
@@ -1382,7 +1418,7 @@ body {
 }
 .contacts .contact-box .contact-content .form .form-button:disabled {
   background-color: #89898a;
-  outline: 1px solid #212A35;
+  border: none;
 }
 
 .footer {

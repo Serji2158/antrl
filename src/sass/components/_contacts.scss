@@ -23,7 +23,7 @@
       }
       @media screen and (min-width: 1200px) {
         width: 565px;
-          height: 678px;
+        height: 678px;
       }
     }
 
@@ -49,13 +49,13 @@
         @extend %sectionTitle;
         @media screen and (min-width: 768px) {
           width: 244px;
-           font-size: 38px ;
-            //  margin-bottom: 24px;
+          font-size: 38px;
+          //  margin-bottom: 24px;
         }
         @media screen and (min-width: 1200px) {
           width: 100%;
-          font-size: 58px ;
-            //  margin-bottom: 24px;
+          font-size: 58px;
+          //  margin-bottom: 24px;
         }
       }
       .section-text {
@@ -138,7 +138,7 @@
 
           &:disabled {
             background-color: #89898a;
-            outline: 1px solid $primaryTextColor;
+            border: none;
           }
         }
       }
