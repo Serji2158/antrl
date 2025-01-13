@@ -1,7 +1,7 @@
 [[redirects]]
-  from = "/index.html"
+  from = "/"
   to = "/privacy.html"
 
 [[redirects]]
-  from = "/index.html"
+  from = "/"
   to = "/terms.html"
