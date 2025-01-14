@@ -1574,4 +1574,16 @@ body {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
+}
+
+.p-title {
+  margin-bottom: 10px;
+  border-bottom: 3px solid;
+}
+
+.sec-title,
+.sec-subtitle,
+.sec-sub_title {
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
 }/*# sourceMappingURL=main.css.map */
