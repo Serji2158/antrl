@@ -100,17 +100,19 @@
         .estimate-link-est {
           @include button(
             $width: 156px,
-            $background-color: #fff,
-            $color: $primaryTextColor
+            $background-color: $primaryTextColor,
+            $color: #fffefa
           );
         }
 
         .estimate-link-arrow {
           margin-left: 2px;
           @extend %buttonArrow;
+           border: 1.5px solid $primaryTextColor;
+          background-color: $primaryTextColor;
 
           .icon-arrow-black {
-            stroke: $primaryTextColor;
+            stroke: #fffefa;
           }
         }
       }

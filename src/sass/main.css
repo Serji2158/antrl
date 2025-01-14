@@ -242,8 +242,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   height: 459px;
-  padding-top: 32px;
-  padding-bottom: 64px;
+  padding-top: 24px;
+  padding-bottom: 60px;
   background-image: url("../images/desktop/Hero_1x-min.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -949,17 +949,19 @@ body {
   height: 54px;
   border-radius: 30px;
   outline: 1px solid #212a35;
-  background-color: #fff;
+  background-color: #212A35;
   padding: 16px 24px;
-  color: #212A35;
+  color: #fffefa;
   font-size: 16px;
   line-height: 1.4;
 }
 .kitchen .service-box .service-content .estimate-link .estimate-link-arrow {
   margin-left: 2px;
+  border: 1.5px solid #212A35;
+  background-color: #212A35;
 }
 .kitchen .service-box .service-content .estimate-link .estimate-link-arrow .icon-arrow-black {
-  stroke: #212A35;
+  stroke: #fffefa;
 }
 .kitchen .examples {
   display: flex;
@@ -1092,17 +1094,19 @@ body {
   height: 54px;
   border-radius: 30px;
   outline: 1px solid #212a35;
-  background-color: #fff;
+  background-color: #212A35;
   padding: 16px 24px;
-  color: #212A35;
+  color: #fff;
   font-size: 16px;
   line-height: 1.4;
 }
 .oneday .service-box .service-content .estimate-link .estimate-link-arrow {
   margin-left: 2px;
+  border: 1.5px solid #212A35;
+  background-color: #212A35;
 }
 .oneday .service-box .service-content .estimate-link .estimate-link-arrow .icon-arrow-black {
-  stroke: #212A35;
+  stroke: #fffefa;
 }
 .oneday .service-box .section-img-box {
   display: none;
@@ -1268,6 +1272,11 @@ body {
     margin-left: 20px;
   }
 }
+.feedbacks .carousel-inner {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
 
 .contacts {
   padding-bottom: 66px;
@@ -1375,12 +1384,7 @@ body {
   border-radius: 30px;
   resize: none;
 }
-.contacts .contact-box .contact-content .form .form-area .form-area::-moz-placeholder {
-  font-size: 16px;
-  line-height: 1.3;
-  color: #818284;
-}
-.contacts .contact-box .contact-content .form .form-area .form-area::placeholder {
+.contacts .contact-box .contact-content .form .form-area:placeholder {
   font-size: 16px;
   line-height: 1.3;
   color: #818284;
@@ -1458,7 +1462,7 @@ body {
 }
 .footer .footer-info .logo {
   width: 50%;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 23px;
   text-transform: uppercase;
   color: #212A35;
