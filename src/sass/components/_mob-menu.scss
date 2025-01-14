@@ -5,7 +5,8 @@
   width: 100vw;
   height: 459px;
 
-  background-color: rgba(0, 0, 0, 0.7);
+  // background-color: rgba(0, 0, 0, 0.7);
+  background-color: $primaryTextColor;
 
   @media screen and (min-width: 768px) {
     display: none;

@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: center;
 
-   @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     background-image: url(../images/mobile/Hero_mobile_1x-min.png);
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 1920dpi),
@@ -68,7 +68,7 @@
         margin-left: auto;
         margin-right: auto;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         text-transform: uppercase;
         text-align: center;
         color: #fffefa;
@@ -179,14 +179,13 @@
       margin-top: 50vh;
     }
     .hero-title {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 32px;
       line-height: 1.1;
       color: #fffefa;
       @media screen and (min-width: 768px) {
         width: 755px;
         font-size: 64px;
-        font-weight: 700;
       }
       @media screen and (min-width: 1200px) {
         width: 1123px;

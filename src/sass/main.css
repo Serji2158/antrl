@@ -306,7 +306,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #fffefa;
@@ -405,7 +405,7 @@ body {
   }
 }
 .header .hero .hero-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 32px;
   line-height: 1.1;
   color: #fffefa;
@@ -414,7 +414,6 @@ body {
   .header .hero .hero-title {
     width: 755px;
     font-size: 64px;
-    font-weight: 700;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -430,7 +429,7 @@ body {
   left: 0;
   width: 100vw;
   height: 459px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #212A35;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -770,17 +769,18 @@ body {
   height: 54px;
   border-radius: 30px;
   outline: 1px solid #212a35;
-  background-color: #fff;
+  background-color: #212A35;
   padding: 16px 24px;
-  color: #212A35;
+  color: #fffefa;
   font-size: 16px;
   line-height: 1.4;
 }
 .bathroom .service-box .service-content .estimate-link .estimate-link-arrow {
   margin-left: 2px;
+  background-color: #212A35;
 }
 .bathroom .service-box .service-content .estimate-link .estimate-link-arrow .icon-arrow-black {
-  stroke: #212A35;
+  stroke: #fffefa;
 }
 .bathroom .service-box .section-img-box {
   display: none;
@@ -1461,7 +1461,7 @@ body {
   font-weight: 500;
   font-size: 23px;
   text-transform: uppercase;
-  color: inherit;
+  color: #212A35;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-info .logo {
@@ -1586,4 +1586,26 @@ body {
 .sec-sub_title {
   margin-top: 0.5em;
   margin-bottom: 0.75em;
+}
+
+.p-email {
+  font-weight: 700;
+  color: #212A35;
+}
+
+.p-title {
+  margin-bottom: 10px;
+  border-bottom: 3px solid;
+}
+
+.sec-title,
+.sec-subtitle,
+.sec-sub_title {
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.p-email {
+  font-weight: 700;
+  color: #212A35;
 }/*# sourceMappingURL=main.css.map */
