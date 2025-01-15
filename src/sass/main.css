@@ -73,35 +73,35 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fontie-package/Goli Bold.woff") format("wof");
+  src: url("../fontie-package/Goli-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Goli";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("../fontie-package/Goli Light.woff") format("woff");
+  src: url("../fontie-package/Goli-Light.woff") format("woff");
 }
 @font-face {
   font-family: "Goli";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../fontie-package/Goli Medium.woff") format("wof");
+  src: url("../fontie-package/Goli-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Goli";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fontie-package/Goli Regular.woff") format("wof");
+  src: url("../fontie-package/Goli-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Goli";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fontie-package/Goli SemiBold.woff") format("wof");
+  src: url("../fontie-package/Goli-SemiBold.woff") format("woff");
 }
 ul {
   margin: 0;
@@ -154,6 +154,7 @@ address {
 }
 
 .contacts .contact-box .contact-content .section-name, .feedbacks .section-content .section-name, .oneday .service-box .service-content .section-name, .kitchen .service-box .service-content .section-name, .bathroom .service-box .service-content .section-name, .about .content-box .section-content .section-name {
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   color: #212A35;
@@ -190,6 +191,7 @@ address {
 }
 
 .contacts .contact-box .contact-content .section-name, .feedbacks .section-content .section-name, .oneday .service-box .service-content .section-name, .kitchen .service-box .service-content .section-name, .bathroom .service-box .service-content .section-name, .about .content-box .section-content .section-name {
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   color: #212A35;
@@ -226,7 +228,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1358px;
   }
 }
 
@@ -236,10 +238,11 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #212A35;
+  background-color: #FFFEFA;
 }
 
 .header {
-  max-width: 1440px;
+  width: 100vw;
   margin: 0 auto;
   height: 459px;
   padding-top: 24px;
@@ -261,7 +264,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header {
-    height: 100vh;
+    height: 635px;
     background-image: url(../images/tablet/Hero_tablet_1x-min.png);
   }
 }
@@ -272,6 +275,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header {
+    height: 100vh;
     background-image: url(../images/desktop/Hero_1x-min.png);
   }
 }
@@ -301,7 +305,6 @@ body {
   }
 }
 .header .header-position .logo-wrap .logo {
-  display: block;
   width: 104px;
   margin-left: auto;
   margin-right: auto;
@@ -310,9 +313,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fffefa;
-}
-.header .header-position .logo-wrap .logo:hover {
-  color: #212A35;
 }
 @media screen and (min-width: 768px) {
   .header .header-position .logo-wrap .logo {
@@ -341,11 +341,18 @@ body {
   margin-top: 8px;
 }
 .header .header-position .nav .menu-link {
+  position: relative;
   font-size: 16px;
   color: #fffefa;
 }
-.header .header-position .nav .menu-link:hover {
-  color: #212A35;
+.header .header-position .nav .menu-link:hover::after {
+  position: absolute;
+  top: 100%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fffefa;
 }
 .header .header-position .nav .header-link {
   display: flex;
@@ -353,24 +360,26 @@ body {
   border-radius: 30px;
 }
 .header .header-position .nav .header-link:hover .header-link-text {
-  background-color: #212A35;
-  border: 1px solid #2c3847;
-  color: #fffefa;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2509803922);
+  background-color: #fffefa;
+  color: #212A35;
 }
 .header .header-position .nav .header-link:active .header-link-text {
-  background-color: #293441;
+  background-color: #fffefa;
   border: 1px solid #212A35;
-  color: #fffefa;
-}
-.header .header-position .nav .header-link:hover .header-link-arrow {
-  background-color: #212A35;
-  border: 1px solid #2c3847;
+  color: #212A35;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2509803922);
 }
+.header .header-position .nav .header-link:hover .header-link-arrow {
+  background-color: #fffefa;
+  border: 1px solid #2c3847;
+}
+.header .header-position .nav .header-link:hover .header-link-arrow .icon-arrow-white {
+  stroke: #212A35;
+}
 .header .header-position .nav .header-link:active .header-link-arrow {
-  background-color: #293441;
+  background-color: #fffefa;
   border: 1px solid #212A35;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2509803922);
 }
 .header .header-position .nav .header-link .header-link-text {
   width: 156px;
@@ -405,7 +414,7 @@ body {
   }
 }
 .header .hero .hero-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 32px;
   line-height: 1.1;
   color: #fffefa;
@@ -500,8 +509,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .about .content-box {
-    -moz-column-gap: 56px;
-         column-gap: 56px;
+    -moz-column-gap: 43px;
+         column-gap: 43px;
     margin-bottom: 64px;
   }
 }
@@ -543,7 +552,7 @@ body {
 @media screen and (min-width: 1200px) {
   .about .content-box .section-content .section-title {
     font-size: 64px;
-    line-height: 1.1;
+    line-height: 1.2;
   }
 }
 @media screen and (min-width: 768px) {
@@ -729,6 +738,12 @@ body {
     width: 244px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .bathroom .service-box .service-content .section-title {
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
 .bathroom .service-box .service-content .section-text {
   margin-bottom: 16px;
 }
@@ -909,6 +924,12 @@ body {
     width: 244px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .kitchen .service-box .service-content .section-title {
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
 .kitchen .service-box .service-content .section-text {
   margin-bottom: 16px;
 }
@@ -1052,6 +1073,13 @@ body {
 @media screen and (min-width: 768px) {
   .oneday .service-box .service-content .section-title {
     width: 244px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .oneday .service-box .service-content .section-title {
+    width: 329px;
+    font-size: 64px;
+    line-height: 1.2;
   }
 }
 .oneday .service-box .service-content .section-text {
@@ -1206,6 +1234,13 @@ body {
     width: 244px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feedbacks .section-content .section-title {
+    width: 412px;
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
 .feedbacks .section-content .section-text {
   margin-bottom: 16px;
 }
@@ -1347,7 +1382,8 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts .contact-box .contact-content .section-title {
     width: 100%;
-    font-size: 58px;
+    font-size: 64px;
+    line-height: 1.1;
   }
 }
 .contacts .contact-box .contact-content .section-text {
@@ -1421,7 +1457,7 @@ body {
   outline: 1px solid #212A35;
 }
 .contacts .contact-box .contact-content .form .form-button:disabled {
-  background-color: #89898a;
+  background-color: #212A35;
   border: none;
 }
 
@@ -1462,7 +1498,7 @@ body {
 }
 .footer .footer-info .logo {
   width: 50%;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 23px;
   text-transform: uppercase;
   color: #212A35;
@@ -1492,12 +1528,13 @@ body {
 @media screen and (min-width: 768px) {
   .footer .footer-info .footer-contacts-wrap {
     order: 2;
-    width: 33.3%;
+    width: 158px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-info .footer-contacts-wrap {
     order: 0;
+    width: 220px;
   }
 }
 .footer .footer-info .footer-socials-wrap {
@@ -1524,6 +1561,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer .footer-info .footer-scroll-wrap {
     order: 0;
+    width: 100px;
   }
 }
 .footer .footer-info .footer-scroll-wrap .footer-scroll-link {
@@ -1551,6 +1589,22 @@ body {
 .footer .footer-info .footer-menu-link,
 .footer .footer-info .footer-address-link {
   color: inherit;
+}
+.footer .footer-info .footer-social-item,
+.footer .footer-info .footer-address-item,
+.footer .footer-info .footer-menu-item {
+  position: relative;
+}
+.footer .footer-info .footer-social-item:hover::after,
+.footer .footer-info .footer-address-item:hover::after,
+.footer .footer-info .footer-menu-item:hover::after {
+  position: absolute;
+  top: 100%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #212A35;
 }
 .footer .footer-info .footer-social-link {
   width: 144px;

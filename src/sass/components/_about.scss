@@ -16,7 +16,8 @@
       margin-bottom: 42px;
     }
     @media screen and (min-width: 1200px) {
-      column-gap: 56px;
+      // column-gap: 56px;
+      column-gap: 43px;
       margin-bottom: 64px;
     }
 
@@ -53,7 +54,7 @@
         }
         @media screen and (min-width: 1200px) {
           font-size: 64px;
-          line-height: 1.1;
+          line-height: 1.2;
         }
       }
     }

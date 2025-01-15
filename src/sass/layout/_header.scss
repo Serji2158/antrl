@@ -1,5 +1,6 @@
 .header {
-  max-width: 1440px;
+  // max-width: 1440px;
+  width: 100vw;
   margin: 0 auto;
   height: 459px;
 
@@ -20,7 +21,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    height: 100vh;
+    height: 635px;
     background-image: url(../images/tablet/Hero_tablet_1x-min.png);
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 1920dpi),
@@ -30,6 +31,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    height: 100vh;
     background-image: url(../images/desktop/Hero_1x-min.png);
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 1920dpi),
@@ -57,7 +59,7 @@
       }
 
       .logo {
-        display: block;
+        // display: block;
         width: 104px;
         margin-left: auto;
         margin-right: auto;
@@ -67,9 +69,9 @@
         text-align: center;
         color: #fffefa;
 
-        &:hover {
-          color: $primaryTextColor;
-        }
+        // &:hover {
+        //   color: $primaryTextColor;
+        // }
 
         @media screen and (min-width: 768px) {
           width: 123px;
@@ -101,11 +103,18 @@
         margin-top: 8px;
       }
       .menu-link {
+        position: relative;
         font-size: 16px;
         color: #fffefa;
 
-        &:hover {
-          color: $primaryTextColor;
+        &:hover::after {
+          position: absolute;
+          top: 100%;
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: #fffefa;
         }
       }
 
@@ -115,25 +124,38 @@
         border-radius: 30px;
 
         &:hover .header-link-text {
-          background-color: $primaryTextColor;
-          border: 1px solid #2c3847;
-          color: #fffefa;
-          box-shadow: 0 5px 16px #00000040;
+          background-color: #fffefa;
+          // border: 1px solid #2c3847;
+          color: $primaryTextColor;
+          // color: #fffefa;
+          // background-color: $primaryTextColor;
+          // box-shadow: 0 5px 16px #00000040;
         }
         &:active .header-link-text {
-          background-color: #293441;
+          // background-color: #293441;
+          background-color: #fffefa;
           border: 1px solid $primaryTextColor;
-          color: #fffefa;
+          // color: #fffefa;
+          color: $primaryTextColor;
+          box-shadow: 0 5px 16px #00000040;
         }
 
         &:hover .header-link-arrow {
-          background-color: $primaryTextColor;
+          // background-color: $primaryTextColor;
+          background-color: #fffefa;
           border: 1px solid #2c3847;
-          box-shadow: 0 5px 16px #00000040;
+          // box-shadow: 0 5px 16px #00000040;
+
+          & .icon-arrow-white {
+            stroke: $primaryTextColor;
+          }
         }
         &:active .header-link-arrow {
-          background-color: #293441;
+          // background-color: #293441;
+          background-color: #fffefa;
           border: 1px solid $primaryTextColor;
+          // stroke: $primaryTextColor;
+          box-shadow: 0 5px 16px #00000040;
         }
 
         .header-link-text {
@@ -173,7 +195,7 @@
       margin-top: 50vh;
     }
     .hero-title {
-      font-weight: 700;
+      font-weight: 500;
       font-size: 32px;
       line-height: 1.1;
       color: #fffefa;

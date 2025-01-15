@@ -54,8 +54,9 @@
         }
         @media screen and (min-width: 1200px) {
           width: 100%;
-          font-size: 58px;
+          font-size: 64px;
           //  margin-bottom: 24px;
+          line-height: 1.1;
         }
       }
       .section-text {
@@ -137,7 +138,8 @@
           }
 
           &:disabled {
-            background-color: #89898a;
+            // background-color: #89898a;
+            background-color: $primaryTextColor;
             border: none;
           }
         }

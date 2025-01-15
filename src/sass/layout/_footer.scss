@@ -31,7 +31,7 @@
 
     .logo {
       width: 50%;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 23px;
       text-transform: uppercase;
       color: $primaryTextColor;
@@ -59,10 +59,12 @@
       width: 100%;
       @media screen and (min-width: 768px) {
         order: 2;
-        width: 33.3%;
+        // width: 33.3%;
+        width: 158px;
       }
       @media screen and (min-width: 1200px) {
         order: 0;
+       width: 220px;
       }
     }
     .footer-socials-wrap {
@@ -82,6 +84,7 @@
       }
       @media screen and (min-width: 1200px) {
         order: 0;
+        width: 100px;
       }
 
       .footer-scroll-link {
@@ -113,6 +116,24 @@
     .footer-menu-link,
     .footer-address-link {
       color: inherit;
+    }
+
+    .footer-social-item,
+    .footer-address-item,
+    .footer-menu-item {
+      position: relative;
+    }
+
+    .footer-social-item:hover::after,
+    .footer-address-item:hover::after,
+    .footer-menu-item:hover::after {
+      position: absolute;
+      top: 100%;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $primaryTextColor;
     }
 
     .footer-social-link {
