@@ -860,6 +860,7 @@
                   placeholder="Name*"
                   class="form-input"
                 />
+                
                 <label for="phone"></label>
                 <input
                   type="tel"
@@ -869,6 +870,7 @@
                   placeholder="Phone*"
                   class="form-input"
                 />
+                <span id="phoneError" class="error-message"></span>
                 <label for="email"></label>
                 <input
                   type="email"
@@ -876,8 +878,10 @@
                   id="email"
                   required
                   placeholder="Email*"
+                  pattern="^\S+@\S+\.\S+$" title="example@mail.com"
                   class="form-input"
                 />
+                <span id="phoneError" class="error-message"></span>
 
                 <textarea
                   placeholder="How can we help you?*"
@@ -1036,6 +1040,7 @@
     <script src="./src/js/menu.js" type="module"></script>
 
     <script src="./src/js/email.js" type="module"></script>
+    <script src="./src/js/validation.js" type="module"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"

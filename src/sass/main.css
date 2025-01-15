@@ -1410,6 +1410,12 @@ body {
   border: 1px solid #212A35;
   border-radius: 30px;
 }
+.contacts .contact-box .contact-content .form .error-message {
+  color: red;
+  font-size: 14px;
+  display: block;
+  margin-top: 4px;
+}
 .contacts .contact-box .contact-content .form .form-area {
   height: 99px;
   margin-bottom: 16px;
