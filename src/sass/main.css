@@ -583,7 +583,6 @@ body {
 }
 .about .content-box .section-info .contact-link:hover .contact-link-estimate {
   background-color: #212A35;
-  outline: 1px solid #2c3847;
   color: #fffefa;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2509803922);
 }
@@ -594,7 +593,6 @@ body {
 }
 .about .content-box .section-info .contact-link:hover .contact-link-arrow {
   background-color: #212A35;
-  outline: 1px solid #2c3847;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2509803922);
 }
 .about .content-box .section-info .contact-link:active .contact-link-arrow {

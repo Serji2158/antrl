@@ -85,7 +85,7 @@
 
         &:hover .contact-link-estimate {
           background-color: $primaryTextColor;
-          outline: 1px solid #2c3847;
+          // outline: 1px solid #2c3847;
           color: #fffefa;
           box-shadow: 0 4px 16px #00000040;
         }
@@ -97,7 +97,7 @@
 
         &:hover .contact-link-arrow {
           background-color: $primaryTextColor;
-          outline: 1px solid #2c3847;
+          // outline: 1px solid #2c3847;
           box-shadow: 0 5px 16px #00000040;
         }
         &:active .contact-link-arrow {
