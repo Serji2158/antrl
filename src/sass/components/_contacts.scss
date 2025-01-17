@@ -24,6 +24,7 @@
       @media screen and (min-width: 1200px) {
         width: 565px;
         height: 678px;
+        // height: 735px;
       }
     }
 
@@ -40,8 +41,8 @@
         margin-bottom: 24px;
         @media screen and (min-width: 768px) {
           font-size: 16px;
-          // margin-bottom: 32px;
-          margin-bottom: 55px;
+          margin-bottom: 25px;
+          // margin-bottom: 55px;
         }
       }
       .section-title {
@@ -52,6 +53,7 @@
           width: 247px;
           font-size: 38px;
           //  margin-bottom: 24px;
+          margin-bottom: 0;
         }
         @media screen and (min-width: 1200px) {
           width: 100%;
@@ -62,13 +64,14 @@
       }
       .section-text {
         @extend %sectionText;
-        margin-bottom: 16px;
+        // margin-bottom: 16px;
         @media screen and (min-width: 768px) {
           display: none;
         }
         @media screen and (min-width: 1200px) {
           display: block;
-          margin-bottom: 24px;
+          // margin-bottom: 24px;
+          margin-bottom: 0;
           width: 486px;
         }
       }
@@ -77,33 +80,53 @@
         display: flex;
         flex-direction: column;
 
-        .form-input {
-          height: 53px;
-          margin-bottom: 16px;
-          padding: 16px;
-          border: 1px solid $primaryTextColor;
-          border-radius: 30px;
-        }
+        .input-wrap {
+          // height: 53px;
+          position: relative;
 
-        .error-message {
-          color: red;
-          font-size: 14px;
-          display: block;
-          margin-top: 4px;
-        }
+          &:nth-child(4) {
+            margin-bottom: 15px;
+          }
 
-        .form-area {
-          height: 99px;
-          margin-bottom: 16px;
-          padding: 16px;
-          border: 1px solid $primaryTextColor;
-          border-radius: 30px;
-          resize: none;
+          .form-input {
+            height: 53px;
+            // margin-bottom: 16px;
+            padding: 16px;
+            border: 1px solid $primaryTextColor;
+            border-radius: 30px;
+            width: 100%;
 
-          &:placeholder {
-            font-size: 16px;
-            line-height: 1.3;
-            color: #818284;
+            // &:focus:invalid {
+            //   border: 2px solid red;
+            // }
+            // &:focus:valid {
+            //   border: 2px solid green;
+            // }
+          }
+
+          .error-message {
+            position: absolute;
+            bottom: -20px;
+            left: 15px;
+            color: red;
+            font-size: 12px;
+            display: block;
+          }
+
+          .form-area {
+            height: 99px;
+            width: 100%;
+            // margin-bottom: 16px;
+            padding: 16px;
+            border: 1px solid $primaryTextColor;
+            border-radius: 30px;
+            resize: none;
+
+            &:placeholder {
+              font-size: 16px;
+              line-height: 1.3;
+              color: #818284;
+            }
           }
         }
 

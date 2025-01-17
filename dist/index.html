@@ -17,9 +17,17 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css"
     />
-    <script type="module" crossorigin src="/assets/index-DqZ4lbHv.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CPozXb4s.css">
+    <script type="module" crossorigin src="/assets/index-CLoz4JaN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Db0ciHXB.css">
   </head>
   <body>
     <header class="header">
@@ -33,10 +41,10 @@
                 ></use>
               </svg>
             </button>
-            <p class="logo"
-              >ANT <br />
-              REMODEL</p
-            >
+            <p class="hd-logo">
+              ANT <br />
+              REMODEL
+            </p>
           </div>
 
           <nav class="nav">
@@ -380,7 +388,10 @@
           <div class="service-box">
             <div class="service-content">
               <h2 class="section-name">Service</h2>
-              <h3 class="section-title">Bathroom in one day</h3>
+              <h3 class="section-title">
+                Bathroom<br />
+                in one day
+              </h3>
               <p class="section-text">
                 Don’t wait for weeks to enjoy your dream bathroom. Our fast,
                 efficient service ensures that your bathroom gets a complete
@@ -746,42 +757,58 @@
                 accurate estimate. Take the first step towards bringing your
                 ideas to life with a free of charge consultation.
               </p>
-              <form class="form" id="form">
-                <label for="name"></label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  placeholder="Name*"
-                  class="form-input"
-                />
-                <label for="phone"></label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  required
-                  placeholder="Phone*"
-                  class="form-input"
-                />
-                <label for="email"></label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder="Email*"
-                  class="form-input"
-                />
+              <form class="form" id="contactForm" autocomplete="on">
+                <div class="input-wrap">
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    required
+                    placeholder="Name*"
+                    class="form-input"
+                  />
+                  <span class="error-message"></span>
+                </div>
 
-                <textarea
-                  placeholder="Message*"
-                  name="comments"
-                  id="comments"
-                  required
-                  class="form-area"
-                ></textarea>
+                <div class="input-wrap">
+                  <label for="phone"></label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    required
+                    placeholder="Phone*"
+                    class="form-input"
+                  />
+                  <span class="error-message"></span>
+                </div>
+
+                <div class="input-wrap">
+                  <label for="email"></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="Email*"
+                    class="form-input"
+                  />
+                  <span class="error-message"></span>
+                </div>
+
+                <div class="input-wrap">
+                  <label for="comments"></label>
+                  <textarea
+                    placeholder="How can we help you?*"
+                    name="comments"
+                    id="comments"
+                    required
+                    class="form-area"
+                  ></textarea>
+                  <span class="error-message"></span>
+                </div>
+
                 <div class="policy-wrap">
                   <input type="checkbox" class="checkbox" id="input-check" />
                   <label for="input-check" class="checkbox-label">
@@ -790,8 +817,8 @@
                         <use href=""></use>
                       </svg>
                     </span>
-                    By submitting my data, I confirm that I have read and
-                    agree to the<br>Ant Remodel&nbsp;<a
+                    By submitting my data, I confirm that I have read and agree
+                    to the Ant Remodel&nbsp;<a
                       class="policy-link"
                       href="./privacy.html"
                       target="_blank"
@@ -804,7 +831,12 @@
                   </label>
                 </div>
 
-                <button class="form-button" id="form-button" disabled>
+                <button
+                  type="submit"
+                  class="form-button"
+                  id="form-button"
+                  disabled
+                >
                   Submit
                 </button>
               </form>
@@ -826,10 +858,10 @@
                 <a href="#about" class="footer-menu-link">About</a>
               </li>
               <li class="footer-menu-item">
-                <a href="#review" class="footer-menu-link">Reviews</a>
+                <a href="#bathroom" class="footer-menu-link">Services</a>
               </li>
               <li class="footer-menu-item">
-                <a href="#bathroom" class="footer-menu-link">Services</a>
+                <a href="#review" class="footer-menu-link">Reviews</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#contact" class="footer-menu-link">Contact</a>
@@ -929,10 +961,11 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/PNotify.js"></script>
   </body>
 </html>
