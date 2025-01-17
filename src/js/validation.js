@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const inputs = form.querySelectorAll('.form-input, .form-area');
   const checkbox = document.getElementById('input-check');
 
+  function validateName(name) {
+    const namePattern = /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
+    return namePattern.test(name);
+  }
   function validateEmail(email) {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
@@ -20,8 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function validateField(field) {
     const errorMessage = field.nextElementSibling;
     let isValid = true;
-
-    if (field.name === 'email') {
+    
+    if (field.name === 'name') {
+      isValid = validateName(field.value.trim());
+      errorMessage.textContent = isValid ? '' : 'Enter a valid name.';
+     
+    } else if (field.name === 'email') {
       isValid = validateEmail(field.value.trim());
       errorMessage.textContent = isValid ? '' : 'Enter a valid email address.';
      
