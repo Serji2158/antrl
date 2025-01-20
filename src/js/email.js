@@ -1,14 +1,13 @@
-// function emailjsInit() {
-//   emailjs.init({
-//     publicKey: '-jrsFZRcGfNUdSTLV',
-//   });
-// };
-
-// emailjsInit();
 import emailjs from '@emailjs/browser';
 
+
+
+const SERVICE_ID = 'service_fw78kul';
+const TEMPLATE_ID = 'template_9y2ym4h';
+const PUBLIC_KEY = '-jrsFZRcGfNUdSTLV';
+
 emailjs.init({
-  publicKey: '-jrsFZRcGfNUdSTLV',
+  publicKey: PUBLIC_KEY,
 });
 
 
@@ -22,10 +21,10 @@ export default function sendMail() {
   };
 
   emailjs
-    .send('service_fw78kul', 'template_9y2ym4h', params)
+    .send(SERVICE_ID, TEMPLATE_ID, params)
     .then(
-      PNotify.success({ title: 'Success!', text: 'Message sent!', delay: 1000 })
+      PNotify.success({ title: 'Success!', text: 'Message sent!', delay: 2000 })
     );
 }
 
-// document.querySelector('.form-button').addEventListener('click', sendMail);
+

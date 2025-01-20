@@ -85,17 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     checkFormValidity();
     if (!submitButton.disabled) {
-      // alert('Form submitted successfully!');
-      PNotify.info({
+        PNotify.info({
         title: 'Well done!',
         text: 'Form submitted successfully!',
         delay: 1000,
       });
       sendMail();
-      // alert('Message sent!');
-     
       form.reset();
-      // checkFormValidity();
     }
   });
 });
