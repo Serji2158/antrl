@@ -20,11 +20,7 @@ export default function sendMail() {
     checkbox: document.getElementById('input-check'),
   };
 
-  emailjs
-    .send(SERVICE_ID, TEMPLATE_ID, params)
-    .then(
-      PNotify.success({ title: 'Success!', text: 'Message sent!', delay: 2000 })
-    );
+  emailjs.send(SERVICE_ID, TEMPLATE_ID, params).then(PNotify.success({ title: 'Success!', text: 'Message sent!', delay: 2000 }));
 }
 
 
