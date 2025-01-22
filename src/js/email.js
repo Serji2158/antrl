@@ -1,5 +1,5 @@
-import emailjs from '@emailjs/browser';
-
+// import emailjs from '@emailjs/browser';
+import emailjs from '../../node_modules/@emailjs/browser';
 
 
 const SERVICE_ID = 'service_fw78kul';
