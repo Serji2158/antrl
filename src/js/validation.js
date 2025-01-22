@@ -1,4 +1,4 @@
-import sendMail from './email.js';
+import sendMail from "./email";
 
 
 document.addEventListener('DOMContentLoaded', () => {
