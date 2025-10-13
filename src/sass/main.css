@@ -161,7 +161,7 @@ address {
   line-height: 1.4;
 }
 
-.contacts .contact-box .contact-content .section-title, .feedbacks .section-content .section-title, .oneday .service-box .service-content .section-title, .kitchen .service-box .service-content .section-title, .bathroom .service-box .service-content .section-title, .about .content-box .section-content .section-title {
+.contacts .contact-box .contact-content .section-title, .faq section-title, .areas .section-title, .feedbacks .section-content .section-title, .oneday .service-box .service-content .section-title, .kitchen .service-box .service-content .section-title, .bathroom .service-box .service-content .section-title, .about .content-box .section-content .section-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.2;
@@ -198,7 +198,7 @@ address {
   line-height: 1.4;
 }
 
-.contacts .contact-box .contact-content .section-title, .feedbacks .section-content .section-title, .oneday .service-box .service-content .section-title, .kitchen .service-box .service-content .section-title, .bathroom .service-box .service-content .section-title, .about .content-box .section-content .section-title {
+.contacts .contact-box .contact-content .section-title, .faq section-title, .areas .section-title, .feedbacks .section-content .section-title, .oneday .service-box .service-content .section-title, .kitchen .service-box .service-content .section-title, .bathroom .service-box .service-content .section-title, .about .content-box .section-content .section-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.2;
@@ -257,7 +257,7 @@ body {
     background-image: url(../images/mobile/Hero_mobile_1x-min.png);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 20), screen and (min-width: 480px) and (min-resolution: 1920dpi), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 1920dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .header {
     background-image: url(../images/mobile/Hero_mobile_2x-min.png);
   }
@@ -268,7 +268,7 @@ body {
     background-image: url(../images/tablet/Hero_tablet_1x-min.png);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 20), screen and (min-width: 768px) and (min-resolution: 1920dpi), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 1920dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header {
     background-image: url(../images/tablet/Hero_tablet_2x-min.png);
   }
@@ -279,7 +279,7 @@ body {
     background-image: url(../images/desktop/Hero_1x-min.png);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 20), screen and (min-width: 1200px) and (min-resolution: 1920dpi), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 1920dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header {
     background-image: url(../images/desktop/Hero_2x-min.png);
   }
@@ -1309,6 +1309,46 @@ body {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+
+.areas {
+  padding-bottom: 64px;
+}
+.areas .section-title {
+  width: 305px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .areas .section-title {
+    width: 244px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .areas .section-title {
+    width: 100%;
+    font-size: 64px;
+    line-height: 1.2;
+  }
+}
+
+.faq {
+  padding-bottom: 64px;
+}
+.faq section-title {
+  width: 305px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .faq section-title {
+    width: 244px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .faq section-title {
+    width: 100%;
+    font-size: 64px;
+    line-height: 1.2;
+  }
 }
 
 .contacts {
