@@ -1,5 +1,6 @@
 .faq {
-  padding-bottom: 64px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 
   .section-title {
     width: 305px;
@@ -7,11 +8,28 @@
     @extend %sectionTitle;
     @media screen and (min-width: 768px) {
       width: 244px;
+      margin-bottom: 64px;
     }
     @media screen and (min-width: 1200px) {
       width: 100%;
-      font-size: 64px;
+      font-size: 42px;
       line-height: 1.2;
     }
+  }
+
+  .accordion-item + .accordion-item {
+    margin-top: 16px;
+  }
+  .accordion-button {
+    background-color: #f4ebdf;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+
+    padding: 23.5px 80px 23.5px 20px;
+  }
+
+  .accordion-body {
+    background-color: #f4ebdf;
   }
 }

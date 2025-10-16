@@ -14,7 +14,7 @@
       margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
-      column-gap: 85px;
+      column-gap: 56px;
     }
 
     .service-content {
@@ -22,7 +22,7 @@
         width: 367px;
       }
       @media screen and (min-width: 1200px) {
-        width: 475px;
+        width: 800px;
       }
 
       .section-name {
@@ -30,7 +30,7 @@
         margin-bottom: 24px;
         @media screen and (min-width: 768px) {
           font-size: 16px;
-          margin-bottom: 32px;
+          margin-bottom: 20px;
         }
       }
       .section-title {
@@ -40,17 +40,34 @@
         @media screen and (min-width: 768px) {
           width: 244px;
         }
-         @media screen and (min-width: 1200px) {
-           width: 329px;
-          font-size: 64px;
+        @media screen and (min-width: 1200px) {
+          width: 843px;
+          font-size: 40px;
           line-height: 1.2;
         }
       }
+
+      .section-subtitle {
+        width: 305px;
+        margin-bottom: 16px;
+        @extend %sectionSubTitle;
+        color: $buttonBgColor;
+        @media screen and (min-width: 768px) {
+          width: 244px;
+        }
+        @media screen and (min-width: 1200px) {
+          width: 843px;
+          margin-bottom: 16px;
+          font-size: 32px;
+          line-height: 1.2;
+        }
+      }
+
       .section-text {
         @extend %sectionText;
         margin-bottom: 16px;
         @media screen and (min-width: 1200px) {
-          margin-bottom: 24px;
+          margin-bottom: 42px;
         }
       }
 
@@ -58,43 +75,42 @@
         display: flex;
 
         &:hover .estimate-link-est {
-          background-color: $primaryTextColor;
-          outline: 1px solid #2c3847;
+          background-color: $buttonBgColor;
+          outline: 1px solid $buttonBgColor;
           color: #fffefa;
-          box-shadow: 0 4px 16px #00000040;
+          box-shadow: 0 4px 16px #faa5073e;
         }
         &:active .estimate-link-est {
-          background-color: #293441;
-          outline: 1px solid $primaryTextColor;
+          background-color: $activeButtonBgColor;
+          outline: 1px solid $activeButtonBgColor;
           color: #fffefa;
         }
 
         &:hover .estimate-link-arrow {
-          background-color: $primaryTextColor;
-          outline: 1px solid #2c3847;
-          box-shadow: 0 5px 16px #00000040;
+          background-color: $buttonBgColor;
+          outline: 1px solid $buttonBgColor;
+          box-shadow: 0 4px 16px #faa5073e;
         }
         &:hover .estimate-link-arrow .icon-arrow-black {
           stroke: #fffefa;
         }
         &:active .estimate-link-arrow {
-          background-color: #293441;
-          outline: 1px solid $primaryTextColor;
+          background-color: $activeButtonBgColor;
+          outline: 1px solid $activeButtonBgColor;
         }
 
         .estimate-link-est {
           @include button(
             $width: 156px,
-            $background-color: $primaryTextColor,
-            $color: #fff
+            $background-color: $buttonBgColor,
+            $color: #fffefa
           );
         }
 
-        .estimate-link-arrow {
+       .estimate-link-arrow {
           margin-left: 2px;
-          @extend %buttonArrow;
-            border: 1.5px solid $primaryTextColor;
-          background-color: $primaryTextColor;
+          @extend %buttonArrow; 
+          background-color: $buttonBgColor;
 
           .icon-arrow-black {
             stroke: #fffefa;

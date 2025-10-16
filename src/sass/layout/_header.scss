@@ -32,6 +32,7 @@
 
   @media screen and (min-width: 1200px) {
     height: 100vh;
+    // height: 901px;
     background-image: url(../images/desktop/Hero_1x-min.png);
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 1920dpi),
@@ -68,7 +69,6 @@
         text-align: center;
         color: #fffefa;
 
-   
         @media screen and (min-width: 768px) {
           width: 123px;
           font-size: 14px;
@@ -77,7 +77,6 @@
         @media screen and (min-width: 1200px) {
           width: 380px;
           font-size: 22px;
-          
         }
       }
     }
@@ -115,50 +114,69 @@
         }
       }
 
+      .menu-three-item:first-child{
+        text-align: end;
+        margin-bottom: 8px;
+
+        .phone-link{
+          color: $buttonTextColor;
+          text-decoration: underline;
+          .phone-icon {
+            margin-right: 8px;
+          }
+        }
+      }
       .header-link {
         display: flex;
         height: 54px;
         border-radius: 30px;
-
+        
+        & .header-link-text {
+          background-color: $buttonBgColor;
+          color: $buttonTextColor;
+          border:none;
+        }
         &:hover .header-link-text {
-          background-color: #fffefa;
-          // border: 1px solid #2c3847;
-          color: $primaryTextColor;
-          // color: #fffefa;
-          // background-color: $primaryTextColor;
-          // box-shadow: 0 5px 16px #00000040;
+          background-color: $buttonBgColor;
+          color: $buttonTextColor;
         }
         &:active .header-link-text {
-          // background-color: #293441;
-          background-color: #fffefa;
-          border: 1px solid $primaryTextColor;
-          // color: #fffefa;
-          color: $primaryTextColor;
+          background-color: $activeButtonBgColor;
+          // border: 1px solid $primaryTextColor;
+          color: $buttonTextColor;
           box-shadow: 0 5px 16px #00000040;
+        }
+
+        & .header-link-arrow {
+          background-color: $buttonBgColor;
+          // border: 1px solid #2c3847;
+          border:none;
+
+          & .icon-arrow-white {
+            stroke: $buttonTextColor;
+          }
         }
 
         &:hover .header-link-arrow {
-          // background-color: $primaryTextColor;
-          background-color: #fffefa;
-          border: 1px solid #2c3847;
-          // box-shadow: 0 5px 16px #00000040;
+          background-color: $buttonBgColor;
+          // border: 1px solid #2c3847;
 
           & .icon-arrow-white {
-            stroke: $primaryTextColor;
+            stroke: $buttonTextColor;
           }
         }
+
         &:active .header-link-arrow {
-          // background-color: #293441;
-          background-color: #fffefa;
+          background-color: $activeButtonBgColor;
           border: 1px solid $primaryTextColor;
-          // stroke: $primaryTextColor;
           box-shadow: 0 5px 16px #00000040;
+          
         }
 
         .header-link-text {
           width: 156px;
           height: 54px;
-          border: 1px solid#FFFEFA;
+          // border: 1px solid#FFFEFA;
           border-radius: 30px;
           padding: 16px 22px;
           color: #fffefa;
@@ -168,12 +186,11 @@
           @extend %centeredFlex;
           width: 56px;
           height: 54px;
-          border: 1px solid #fffefa;
+          // border: 1px solid #fffefa;
           border-radius: 50%;
 
           .icon-arrow-white {
             stroke: #fffefa;
-            // stroke: $primaryTextColor;
           }
         }
       }
@@ -188,8 +205,8 @@
       margin-top: 238px;
     }
     @media screen and (min-width: 1200px) {
-      // height: 696px;
-      margin-top: 40vh;
+      margin-top: 49vh;
+      margin-bottom: 11vh;
     }
     .hero-title {
       font-weight: 500;
@@ -201,8 +218,8 @@
         font-size: 64px;
       }
       @media screen and (min-width: 1200px) {
-        width: 1123px;
-        font-size: 96px;
+        width: 1328px;
+        font-size: 72px;
       }
     }
   }

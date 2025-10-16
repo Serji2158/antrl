@@ -22,7 +22,6 @@
     }
 
     .section-content {
- 
       @media screen and (min-width: 768px) {
         width: 367px;
       }
@@ -37,23 +36,38 @@
 
         @media screen and (min-width: 768px) {
           margin-bottom: 32px;
-           font-size: 16px;
+          font-size: 16px;
         }
         @media screen and (min-width: 1200px) {
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
       }
+
+      .section-subtitle {
+        @extend %sectionSubTitle;
+        margin-bottom: 24px;
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 32px;
+          font-size: 16px;
+        }
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 24px;
+        }
+      }
+
       .section-title {
         @extend %sectionTitle;
         margin-bottom: 16px;
 
         @media screen and (min-width: 768px) {
-           margin-bottom: 0;
+          margin-bottom: 0;
           font-size: 42px;
           line-height: 1.1;
         }
         @media screen and (min-width: 1200px) {
-          font-size: 64px;
+          font-size: 42px;
           line-height: 1.2;
         }
       }
@@ -65,7 +79,7 @@
       }
       @media screen and (min-width: 1200px) {
         width: 431px;
-        padding-top: 62px;
+        padding-top: 42px;
       }
 
       .section-text {
@@ -80,34 +94,34 @@
           margin-top: 17px;
         }
         @media screen and (min-width: 1200px) {
-          margin-top: 53px;
+          margin-top: 32px;
         }
 
         &:hover .contact-link-estimate {
-          background-color: $primaryTextColor;
-          // outline: 1px solid #2c3847;
+          background-color: $buttonBgColor;
+          outline: 1px solid $buttonBgColor;
           color: #fffefa;
-          box-shadow: 0 4px 16px #00000040;
+          box-shadow: 0 4px 16px #faa5073e;
         }
         &:active .contact-link-estimate {
-          background-color: #293441;
-          outline: 1px solid $primaryTextColor;
+          background-color: $activeButtonBgColor;
+          outline: 1px solid $activeButtonBgColor;
           color: #fffefa;
         }
 
         &:hover .contact-link-arrow {
-          background-color: $primaryTextColor;
-          // outline: 1px solid #2c3847;
-          box-shadow: 0 5px 16px #00000040;
+          background-color: $buttonBgColor;
+          outline: 1px solid $buttonBgColor;
+          box-shadow: 0 4px 16px #faa5073e;
         }
         &:active .contact-link-arrow {
-          background-color: #293441;
-          outline: 1px solid $primaryTextColor;
+          background-color: $activeButtonBgColor;
+          outline: 1px solid $activeButtonBgColor;
         }
         .contact-link-estimate {
           @include button(
             $width: 136px,
-            $background-color: $primaryTextColor,
+            $background-color: $buttonBgColor,
             $color: #fffefa
           );
         }
@@ -116,8 +130,8 @@
           width: 56px;
           height: 54px;
           border-radius: 50%;
-          border: 1.5px solid $primaryTextColor;
-          background-color: $primaryTextColor;
+          // border: 1.5px solid $primaryTextColor;
+          background-color: $buttonBgColor;
 
           .icon-arrow-white {
             stroke: #fffefa;
@@ -134,7 +148,7 @@
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      
+
       column-gap: 16px;
     }
     @media screen and (min-width: 1200px) {
@@ -155,7 +169,6 @@
 
       .adv-icon {
         margin-bottom: 24px;
-
       }
       .adv-name {
         margin-bottom: 24px;

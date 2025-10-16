@@ -24,7 +24,7 @@
   width: 56px;
   height: 54px;
   border-radius: 50%;
-  outline: 1px solid #212a35;
+  outline: 1px solid $buttonBgColor
 
 }
 
@@ -39,6 +39,12 @@
 %sectionTitle {
   font-weight: 600;
   font-size: 32px;
+  line-height: 1.2;
+  color: $primaryTextColor;
+}
+%sectionSubTitle {
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
   color: $primaryTextColor;
 }
