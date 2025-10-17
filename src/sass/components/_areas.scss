@@ -4,8 +4,10 @@
   background-color: #f4ebdf;
 
   &-position {
-    display: flex;
-    column-gap: 20px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      column-gap: 20px;
+    }
 
     .section-title {
       width: 305px;
@@ -40,8 +42,8 @@
       // margin-bottom: 16px;
       @media screen and (min-width: 1200px) {
         width: 878px;
-       padding-top: 23px;
-       padding-bottom: 23px;
+        padding-top: 23px;
+        padding-bottom: 23px;
       }
     }
   }

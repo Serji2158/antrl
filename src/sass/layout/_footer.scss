@@ -110,19 +110,19 @@
       font-size: 14px;
       // color: #867b7b;
       color: #fffefa;
-      text-align: center;
+      // text-align: center;
     }
 
-     .footer-socials-title::after,
-    .footer-menu-title::after,
-    .footer-contacts-title::after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $buttonBgColor;
-      margin-top: 5px;
-    }
+    //  .footer-socials-title::after,
+    // .footer-menu-title::after,
+    // .footer-contacts-title::after {
+    //   content: '';
+    //   display: block;
+    //   width: 100%;
+    //   height: 2px;
+    //   background-color: $buttonBgColor;
+    //   margin-top: 5px;
+    // }
 
        .footer-social-list{
          display: flex;

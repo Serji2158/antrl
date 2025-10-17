@@ -710,8 +710,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .bathroom .service-box {
-    -moz-column-gap: 56px;
-         column-gap: 56px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -898,8 +898,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .kitchen .service-box {
-    -moz-column-gap: 56px;
-         column-gap: 56px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 .kitchen .service-box .section-img-box {
@@ -1084,8 +1084,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .oneday .service-box {
-    -moz-column-gap: 56px;
-         column-gap: 56px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1378,10 +1378,12 @@ body {
   padding-top: 96px;
   background-color: #f4ebdf;
 }
-.areas-position {
-  display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+@media screen and (min-width: 768px) {
+  .areas-position {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }
 .areas-position .section-title {
   width: 305px;
@@ -1742,17 +1744,6 @@ body {
   font-weight: 500;
   font-size: 14px;
   color: #fffefa;
-  text-align: center;
-}
-.footer .footer-info .footer-socials-title::after,
-.footer .footer-info .footer-menu-title::after,
-.footer .footer-info .footer-contacts-title::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #faa507;
-  margin-top: 5px;
 }
 .footer .footer-info .footer-social-list {
   display: flex;
