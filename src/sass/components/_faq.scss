@@ -4,7 +4,8 @@
 
   .section-title {
     width: 305px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    // font-size: 28px;
     @extend %sectionTitle;
     @media screen and (min-width: 768px) {
       width: 244px;
@@ -23,10 +24,10 @@
   .accordion-button {
     background-color: #f4ebdf;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 120%;
 
-    padding: 23.5px 80px 23.5px 20px;
+    padding: 20px 72px 20px 20px;
   }
 
   .accordion-body {

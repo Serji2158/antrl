@@ -48,6 +48,7 @@
       .section-title {
         width: 305px;
         margin-bottom: 16px;
+        // font-size: 28px;
         @extend %sectionTitle;
         @media screen and (min-width: 768px) {
           width: 247px;
