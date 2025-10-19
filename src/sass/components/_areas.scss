@@ -2,9 +2,13 @@
   padding-bottom: 96px;
   padding-top: 96px;
   background-color: #f4ebdf;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 64px;
+    padding-top: 52px;
+  }
 
   &-position {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       display: flex;
       column-gap: 20px;
     }
@@ -28,7 +32,8 @@
       margin-bottom: 32px;
       @extend %sectionTitle;
       @media screen and (min-width: 768px) {
-        width: 244px;
+        width: 100%;
+        font-size: 36px;
       }
       @media screen and (min-width: 1200px) {
         width: 429px;

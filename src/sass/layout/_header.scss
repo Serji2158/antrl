@@ -202,7 +202,7 @@
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width: 768px) {
-      margin-top: 285px;
+      margin-top: 210px;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 49vh;
@@ -214,8 +214,8 @@
       line-height: 1.1;
       color: #fffefa;
       @media screen and (min-width: 768px) {
-        width: 755px;
-        font-size: 64px;
+        width: 754px;
+        font-size: 58px;
       }
       @media screen and (min-width: 1200px) {
         width: 1328px;
@@ -299,8 +299,8 @@
 
   .fixed-btn {
     position: fixed;
-    bottom: 60px;
-    right: 25px;
+    bottom: 70px;
+    right: 40px;
     z-index: 10;
     width: 60px;
     height: 60px;
@@ -312,17 +312,25 @@
     box-shadow: 0 4px 16px 0 rgba(250, 165, 7, 0.15);
     background: rgba(250, 165, 7, 0.7);
     border: 1px solid rgba(250, 165, 7, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
 
-   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-
-  &.visible {
-     opacity: 1;
-  visibility: visible;
-  }
     @media screen and (min-width: 768px) {
-      display: none;
+      bottom: 80px;
+      right: 50px;
     }
+    @media screen and (min-width: 1200px) {
+      bottom: 100px;
+      right: 50px;
+    }
+
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    // @media screen and (min-width: 768px) {
+    //   display: none;
+    // }
   }
 }

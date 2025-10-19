@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.header');
+  const hero = document.querySelector('.hero');
   const feedbackBtn = document.getElementById('feedback-btn');
 console.log(feedbackBtn);
   const observer = new IntersectionObserver(
