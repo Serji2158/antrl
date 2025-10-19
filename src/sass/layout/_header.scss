@@ -299,11 +299,11 @@
 
   .fixed-btn {
     position: fixed;
-    bottom: 25px;
-    right: 16px;
+    bottom: 60px;
+    right: 25px;
     z-index: 10;
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: $buttonBgColor;
     display: flex;
@@ -312,6 +312,15 @@
     box-shadow: 0 4px 16px 0 rgba(250, 165, 7, 0.15);
     background: rgba(250, 165, 7, 0.7);
     border: 1px solid rgba(250, 165, 7, 0.2);
+
+   opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+
+  &.visible {
+     opacity: 1;
+  visibility: visible;
+  }
     @media screen and (min-width: 768px) {
       display: none;
     }
