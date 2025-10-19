@@ -841,6 +841,7 @@ body {
 .bathroom .service-box .service-content .section-subtitle {
   width: 305px;
   margin-bottom: 16px;
+  font-size: 24px;
   color: #faa507;
 }
 @media screen and (min-width: 768px) {
@@ -1030,6 +1031,7 @@ body {
 .kitchen .service-box .service-content .section-subtitle {
   width: 305px;
   margin-bottom: 16px;
+  font-size: 24px;
   color: #faa507;
 }
 @media screen and (min-width: 768px) {
@@ -1183,6 +1185,7 @@ body {
 .oneday .service-box .service-content .section-subtitle {
   width: 305px;
   margin-bottom: 16px;
+  font-size: 24px;
   color: #faa507;
 }
 @media screen and (min-width: 768px) {

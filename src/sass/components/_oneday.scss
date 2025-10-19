@@ -51,6 +51,7 @@
         width: 305px;
         margin-bottom: 16px;
         @extend %sectionSubTitle;
+         font-size: 24px;
         color: $buttonBgColor;
         @media screen and (min-width: 768px) {
           width: 244px;
