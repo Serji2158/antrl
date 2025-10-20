@@ -112,7 +112,7 @@
 
         &:hover .contact-link-arrow {
           background-color: $buttonBgColor;
-          outline: 1px solid $buttonBgColor;
+          // outline: 1px solid $buttonBgColor;
           box-shadow: 0 4px 16px #faa5073e;
         }
         &:active .contact-link-arrow {
@@ -131,7 +131,7 @@
           width: 56px;
           height: 54px;
           border-radius: 50%;
-          // border: 1.5px solid $primaryTextColor;
+          border: 1.5px solid $buttonBgColor;
           background-color: $buttonBgColor;
 
           .icon-arrow-white {

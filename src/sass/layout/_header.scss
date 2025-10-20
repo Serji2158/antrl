@@ -140,6 +140,7 @@
         &:hover .header-link-text {
           background-color: $buttonBgColor;
           color: $buttonTextColor;
+          box-shadow: 0 4px 16px #faa5073e;
         }
         &:active .header-link-text {
           background-color: $activeButtonBgColor;
@@ -150,7 +151,6 @@
 
         & .header-link-arrow {
           background-color: $buttonBgColor;
-          // border: 1px solid #2c3847;
           border: none;
 
           & .icon-arrow-white {
@@ -160,7 +160,7 @@
 
         &:hover .header-link-arrow {
           background-color: $buttonBgColor;
-          // border: 1px solid #2c3847;
+          box-shadow: 0 4px 16px #faa5073e;
 
           & .icon-arrow-white {
             stroke: $buttonTextColor;
@@ -218,7 +218,7 @@
         font-size: 58px;
       }
       @media screen and (min-width: 1200px) {
-        width: 1328px;
+        width: 100%;
         font-size: 72px;
       }
     }
@@ -231,22 +231,29 @@
 
       & .hero-link-text {
         background-color: $buttonBgColor;
-        color: $buttonTextColor;
+        // color: $buttonTextColor;
+        color: #fffefa;
+
         border: none;
       }
       &:hover .hero-link-text {
         background-color: $buttonBgColor;
-        color: $buttonTextColor;
+        // color: $buttonTextColor;
+        color: #fffefa;
+        box-shadow: 0 4px 16px #faa5073e;
+        outline: 1px solid $buttonBgColor;
       }
       &:active .hero-link-text {
         background-color: $activeButtonBgColor;
         // border: 1px solid $primaryTextColor;
-        color: $buttonTextColor;
-        box-shadow: 0 5px 16px #00000040;
+        // color: $buttonTextColor;
+        outline: 1px solid $activeButtonBgColor;
+        color: #fffefa;
       }
 
       & .hero-link-arrow {
         background-color: $buttonBgColor;
+        box-shadow: 0 4px 16px #faa5073e;
         // border: 1px solid #2c3847;
         border: none;
 

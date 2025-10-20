@@ -348,6 +348,7 @@ body {
 .header .header-position .nav .header-link:hover .header-link-text {
   background-color: #faa507;
   color: #fff;
+  box-shadow: 0 4px 16px rgba(250, 165, 7, 0.2431372549);
 }
 .header .header-position .nav .header-link:active .header-link-text {
   background-color: #e09100;
@@ -363,6 +364,7 @@ body {
 }
 .header .header-position .nav .header-link:hover .header-link-arrow {
   background-color: #faa507;
+  box-shadow: 0 4px 16px rgba(250, 165, 7, 0.2431372549);
 }
 .header .header-position .nav .header-link:hover .header-link-arrow .icon-arrow-white {
   stroke: #fff;
@@ -417,7 +419,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header .hero .hero-title {
-    width: 1328px;
+    width: 100%;
     font-size: 72px;
   }
 }
@@ -429,20 +431,23 @@ body {
 }
 .header .hero .hero-link .hero-link-text {
   background-color: #faa507;
-  color: #fff;
+  color: #fffefa;
   border: none;
 }
 .header .hero .hero-link:hover .hero-link-text {
   background-color: #faa507;
-  color: #fff;
+  color: #fffefa;
+  box-shadow: 0 4px 16px rgba(250, 165, 7, 0.2431372549);
+  outline: 1px solid #faa507;
 }
 .header .hero .hero-link:active .hero-link-text {
   background-color: #e09100;
-  color: #fff;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2509803922);
+  outline: 1px solid #e09100;
+  color: #fffefa;
 }
 .header .hero .hero-link .hero-link-arrow {
   background-color: #faa507;
+  box-shadow: 0 4px 16px rgba(250, 165, 7, 0.2431372549);
   border: none;
 }
 .header .hero .hero-link .hero-link-arrow .icon-arrow-white {
@@ -684,7 +689,6 @@ body {
 }
 .about .content-box .section-info .contact-link:hover .contact-link-arrow {
   background-color: #faa507;
-  outline: 1px solid #faa507;
   box-shadow: 0 4px 16px rgba(250, 165, 7, 0.2431372549);
 }
 .about .content-box .section-info .contact-link:active .contact-link-arrow {
@@ -707,6 +711,7 @@ body {
   width: 56px;
   height: 54px;
   border-radius: 50%;
+  border: 1.5px solid #faa507;
   background-color: #faa507;
 }
 .about .content-box .section-info .contact-link .contact-link-arrow .icon-arrow-white {
@@ -1244,7 +1249,7 @@ body {
   .oneday .service-box .section-img-box {
     display: block;
     background: #d9d9d9;
-    width: 765px;
+    width: 420px;
     height: 483px;
   }
 }
@@ -1777,6 +1782,7 @@ body {
 }
 .footer .footer-info .footer-scroll-wrap .footer-scroll-link .footer-scroll-icon {
   stroke: #fffefa;
+  fill: #fffefa;
 }
 .footer .footer-info .footer-socials-title,
 .footer .footer-info .footer-menu-title,
