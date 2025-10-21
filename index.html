@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <!-- META BASE -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Professional kitchen & bathroom remodeling services across Philadelphia: Bucks, Montgomery & Delaware County, PA. Expert contractors. Affordable cost. Enjoy custom designs using high-quality materials. Free estimate today!"
-    />
+    <meta name="robots" content="index, follow" />
     <title>
       Best Kitchen & Bathroom Remodeling Company in Philadelphia & Nearby
       Counties, PA
     </title>
+    <meta
+      name="description"
+      content="Professional kitchen & bathroom remodeling services across Philadelphia: Bucks, Montgomery & Delaware County, PA. Expert contractors. Affordable cost. Enjoy custom designs using high-quality materials. Free estimate today!"
+    />
+    <!-- CANONICAL -->
     <link rel="canonical" href="https://antremodel.com/" />
-    <!-- <link rel="icon" href="#" type="image/x-icon" sizes="32x32" /> -->
+
+    <!-- FAVICON -->
     <link
       rel="icon"
       type="image/x-icon"
@@ -59,6 +63,168 @@
       href="https://cdn.jsdelivr.net/npm/@pnotify/core/dist/BrightTheme.css"
     />
     <link rel="stylesheet" href="./src/sass/main.css" />
+
+    <!-- OPEN GRAPH -->
+    <meta
+      property="og:title"
+      content="Best Kitchen & Bathroom Remodeling Company in Philadelphia & Nearby Counties, PA"
+    />
+    <meta
+      property="og:description"
+      content="Professional kitchen & bathroom remodeling across Philadelphia: Bucks, Montgomery & Delaware County, PA. Expert contractors. Free estimate today!"
+    />
+    <meta
+      property="og:image"
+      content="https://antremodel.com/images/og-image.jpg"
+    />
+    <meta property="og:url" content="https://antremodel.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AntRemodel" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Best Kitchen & Bathroom Remodeling Company in Philadelphia"
+    />
+    <meta
+      name="twitter:description"
+      content="Professional remodeling across Philadelphia, Bucks, Montgomery & Delaware County, PA."
+    />
+    <meta
+      name="twitter:image"
+      content="https://antremodel.com/images/og-image.jpg"
+    />
+
+     <!-- JSON-LD SCHEMA -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://antremodel.com/#localbusiness",
+            "name": "AntRemodel",
+            "url": "https://antremodel.com/",
+            "logo": "https://antremodel.com/images/logo.png",
+            "image": "https://antremodel.com/images/hero.jpg",
+            "description": "Professional kitchen and bathroom remodeling company serving Philadelphia, Bucks, Montgomery & Delaware County, PA.",
+            "telephone": "+1-267-992-5394",
+            "email": "antremodel@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "410 Central Avenue",
+              "addressLocality": "Cheltenham",
+              "addressRegion": "PA",
+              "postalCode": "19012",
+              "addressCountry": "US"
+            },
+            "openingHours": "Mo-Fr 08:00-18:00",
+            "sameAs": [
+              "https://www.facebook.com/share/1B5FXYAU7a/?mibextid=wwXIfr",
+              "https://www.instagram.com/antremodel?igsh=YTNkNHR0bnY1anR6&utm_source=qr",
+              "https://www.tiktok.com/@antremodel.com?_t=ZP-90FPbKlKGoo"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://antremodel.com/#website",
+            "url": "https://antremodel.com/",
+            "name": "AntRemodel",
+            "description": "Best kitchen and bathroom remodeling company in Philadelphia & nearby counties, PA.",
+            "publisher": {
+              "@id": "https://antremodel.com/#localbusiness"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://antremodel.com/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Service",
+            "@id": "https://antremodel.com/#service",
+            "serviceType": "Kitchen and Bathroom Remodeling",
+            "provider": {
+              "@id": "https://antremodel.com/#localbusiness"
+            },
+            "areaServed": {
+              "@type": "Place",
+              "name": "Philadelphia, Bucks, Montgomery & Delaware County, PA"
+            },
+            "description": "Custom kitchen and bathroom remodeling with high-quality materials and professional design. Free estimate available."
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://antremodel.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you provide free estimates?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we provide free estimates for all remodeling projects in Philadelphia and nearby counties."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What areas do you serve?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We serve Philadelphia, Bucks, Montgomery, and Delaware County, PA."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does a kitchen remodel take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most kitchen remodels take 3–6 weeks depending on project size and materials."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <!-- FACEBOOK PIXEL -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', 'PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"
+      />
+    </noscript>
   </head>
   <body>
     <header class="header">
