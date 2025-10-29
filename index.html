@@ -97,7 +97,7 @@
       content="https://antremodel.com/images/og-image.jpg"
     />
 
-     <!-- JSON-LD SCHEMA -->
+    <!-- JSON-LD SCHEMA -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -588,22 +588,33 @@
           <div class="service-box">
             <figure class="section-img-box">
               <picture>
-                <source
+                <!-- <source
                   srcset="
                     ./src/images/desktop/S2_2x-min.jpeg 2x,
                     ./src/images/desktop/S2_1x-min.jpeg 1x
                   "
                   media="(min-width: 1200px)"
-                />
+                /> -->
                 <source
+                  srcset="
+                    ./src/images/desktop/s2_desktop_2x-min.jpg 2x,
+                    ./src/images/desktop/s2_desktop_1x-min.jpg 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- <source
                   srcset="
                     ./src/images/tablet/S2_tablet_2x-min.jpeg 2x,
                     ./src/images/tablet/S2_tablet_1x-min.jpeg 1x
                   "
                   media="(min-width: 768px)"
-                />
-                <img
+                /> -->
+                <!-- <img
                   src="./src/images/desktop/S2_1x-min.jpeg"
+                  alt="kitchen remodeling company Philadelphia PA, Bucks, Montgomery, Delaware County, PA"
+                /> -->
+                <img
+                  src="./src/images/desktop/s2_desktop_1x-min.jpg"
                   alt="kitchen remodeling company Philadelphia PA, Bucks, Montgomery, Delaware County, PA"
                 />
               </picture>
@@ -681,17 +692,31 @@
                   "
                   media="(min-width: 1200px)"
                 />
-                <source
+                <!-- <source
                   srcset="
                     ./src/images/tablet/S2.2_tablet_2x-min.jpeg 2x,
                     ./src/images/tablet/S2.2_tablet_1x-min.jpeg 1x
                   "
                   media="(min-width: 768px)"
-                />
+                /> -->
                 <source
+                  srcset="
+                    ./src/images/tablet/s2.2_tablet_2x-min.jpg 2x,
+                    ./src/images/tablet/s2.2_tablet_1x-min.jpg 1x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <!-- <source
                   srcset="
                     ./src/images/mobile/S2.2_mobile_2x-min.jpeg 2x,
                     ./src/images/mobile/S2.2_mobile_1x-min.jpeg 1x
+                  "
+                  media="(min-width: 480px)"
+                /> -->
+                <source
+                  srcset="
+                    ./src/images/mobile/s2.2_mobile_2x-min.jpg 2x,
+                    ./src/images/mobile/s2.2_mobile_1x-min.jpg 1x
                   "
                   media="(min-width: 480px)"
                 />
@@ -770,20 +795,27 @@
             </div>
             <figure class="section-img-box">
               <picture>
-                <source
+                <!-- <source
                   srcset="
                     ./src/images/desktop/S3_2x-min.jpeg 2x,
                     ./src/images/desktop/S3_1x-min.jpeg 1x
                   "
                   media="(min-width: 1200px)"
-                />
+                /> -->
                 <source
+                  srcset="
+                    ./src/images/desktop/s3_desktop_2x-min.jpg 2x,
+                    ./src/images/desktop/s3_desktop_1x-min.jpg 1x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <!-- <source
                   srcset="
                     ./src/images/tablet/S3_tablet_2x-min.jpeg 2x,
                     ./src/images/tablet/S3_tablet_1x-min.jpeg 1x
                   "
                   media="(min-width: 768px)"
-                />
+                /> -->
 
                 <img
                   src="./src/images/desktop/S3_1x-min.jpeg"
@@ -809,10 +841,17 @@
                   "
                   media="(min-width: 768px)"
                 />
-                <source
+                <!-- <source
                   srcset="
                     ./src/images/mobile/S3.1_mobile_2x-min.jpeg 2x,
                     ./src/images/mobile/S3.1_mobile_1x-min.jpeg 1x
+                  "
+                  media="(min-width: 480px)"
+                /> -->
+                <source
+                  srcset="
+                    ./src/images/mobile/s3_mobile_2x-min.jpg 2x,
+                    ./src/images/mobile/s3_mobile_1x-min.jpg 1x
                   "
                   media="(min-width: 480px)"
                 />
@@ -860,10 +899,17 @@
                   "
                   media="(min-width: 1200px)"
                 />
-                <source
+                <!-- <source
                   srcset="
                     ./src/images/tablet/S3.3_tablet_2x-min.jpeg 2x,
                     ./src/images/tablet/S3.3_tablet_1x-min.jpeg 1x
+                  "
+                  media="(min-width: 768px)"
+                /> -->
+                <source
+                  srcset="
+                    ./src/images/tablet/s3_tablet_2x-min.jpeg 2x,
+                    ./src/images/tablet/s3_tablet_1x-min.jpg 1x
                   "
                   media="(min-width: 768px)"
                 />
@@ -952,10 +998,11 @@
                       Was professional and did a good job for a good price. I'm
                       happy with finished project.
                     </p>
-
+                    
                     <p class="review-author">
                       Christine P. <span>Mar 7, 2024</span>
                     </p>
+                    
                   </li>
                 </ul>
               </div>
@@ -967,26 +1014,8 @@
                         xlink:href="./src/icons/symbol-defs.svg#icon-quote"
                       ></use>
                     </svg>
-                    <p class="review-text">
-                      I've hired Andrew for several projects. He does excellent
-                      work and is very efficient. He will work within your
-                      budget and has a very wide skill set. Thank you Andrew!!
-                    </p>
-                    <p class="review-author">
-                      Reuben B. <span>Dec 9, 2023</span>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="carousel-item">
-                <ul class="reviews">
-                  <li class="review">
-                    <svg class="review-icon" width="72" height="72">
-                      <use
-                        xlink:href="./src/icons/symbol-defs.svg#icon-quote"
-                      ></use>
-                    </svg>
-                    <p class="review-text">
+                   
+                   <p class="review-text">
                       Very personable and professional. Great quality work also.
                       Looking forward to hiring foe additional jobs.
                     </p>
@@ -1004,7 +1033,27 @@
                         xlink:href="./src/icons/symbol-defs.svg#icon-quote"
                       ></use>
                     </svg>
+                    
                     <p class="review-text">
+                      General Contracting <br />
+                      Awesome experience. Plan to refer him to others. Great
+                      professional presentation and work quality.
+                    </p>
+                    <p class="review-author">
+                      Tyrone B. <span>Jun 2, 2025</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <ul class="reviews">
+                  <li class="review">
+                    <svg class="review-icon" width="72" height="72">
+                      <use
+                        xlink:href="./src/icons/symbol-defs.svg#icon-quote"
+                      ></use>
+                    </svg>
+                    <!-- <p class="review-text">
                       Andrew showed up on time to give an estimate, and was
                       prepared to work if given the job. Once we agreed on what
                       needed to be done as well as a price, he completed the
@@ -1013,6 +1062,15 @@
 
                     <p class="review-author">
                       Tammy S. <span>Oct 7, 2023</span>
+                    </p> -->
+                   
+                     <p class="review-text">
+                      I've hired Andrew for several projects. He does excellent
+                      work and is very efficient. He will work within your
+                      budget and has a very wide skill set. Thank you Andrew!!
+                    </p>
+                    <p class="review-author">
+                      Reuben B. <span>Dec 9, 2023</span>
                     </p>
                   </li>
                 </ul>
@@ -1039,7 +1097,6 @@
                       closet under the stairs into a beautiful powder room! He
                       was timely, communicative, polite, and even affordable.
                     </p>
-
                     <p class="review-author">
                       Alan P. <span>Dec 9, 2024</span>
                     </p>
@@ -1100,13 +1157,13 @@
                         xlink:href="./src/icons/symbol-defs.svg#icon-quote"
                       ></use>
                     </svg>
-                    <p class="review-text">
-                      I've hired Andrew for several projects. He does excellent
-                      work and is very efficient. He will work within your
-                      budget and has a very wide skill set. Thank you Andrew!!
+                     <p class="review-text">
+                      General Contracting <br />
+                      Awesome experience. Plan to refer him to others. Great
+                      professional presentation and work quality.
                     </p>
                     <p class="review-author">
-                      Reuben B. <span>Dec 9, 2023</span>
+                      Tyrone B. <span>Jun 2, 2025</span>
                     </p>
                   </li>
                   <li class="review">
@@ -1115,7 +1172,7 @@
                         xlink:href="./src/icons/symbol-defs.svg#icon-quote"
                       ></use>
                     </svg>
-                    <p class="review-text">
+                    <!-- <p class="review-text">
                       Andrew showed up on time to give an estimate, and was
                       prepared to work if given the job. Once we agreed on what
                       needed to be done as well as a price, he completed the
@@ -1124,6 +1181,15 @@
 
                     <p class="review-author">
                       Tammy S. <span>Oct 7, 2023</span>
+                    </p> -->
+
+                     <p class="review-text">
+                      I've hired Andrew for several projects. He does excellent
+                      work and is very efficient. He will work within your
+                      budget and has a very wide skill set. Thank you Andrew!!
+                    </p>
+                    <p class="review-author">
+                      Reuben B. <span>Dec 9, 2023</span>
                     </p>
                   </li>
                 </ul>
