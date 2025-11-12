@@ -254,10 +254,18 @@ body {
     background-image: url(../images/desktop/Hero_2x-min.png);
   }
 }
-.header .header-position {
-  display: flex;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
+@media screen and (min-width: 768px) {
+  .header .header-position {
+    display: flex;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .header-position {
+    -moz-column-gap: 140px;
+         column-gap: 140px;
+  }
 }
 .header .header-position .logo-wrap {
   display: flex;
@@ -275,7 +283,6 @@ body {
   }
 }
 .header .header-position .logo-wrap .hd-logo {
-  width: 104px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 500;
@@ -287,14 +294,11 @@ body {
 @media screen and (min-width: 768px) {
   .header .header-position .logo-wrap .hd-logo {
     width: 123px;
-    font-size: 14px;
-    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
   .header .header-position .logo-wrap .hd-logo {
-    width: 380px;
-    font-size: 22px;
+    width: 200px;
   }
 }
 .header .header-position .nav {
@@ -554,8 +558,13 @@ body {
   color: rgb(255, 254, 250);
   text-transform: uppercase;
 }
-.mob-menu .mob-menu-container .mob-menu-header .btn-close {
+.mob-menu .mob-menu-container .mob-menu-header .mob-menu-logo-icon {
+  width: 100%;
+  height: 100%;
+}
+.mob-menu .mob-menu-container .mob-menu-header .close-btn {
   border: none;
+  background-color: transparent;
 }
 .mob-menu .mob-menu-container .mob-menu-list {
   margin-top: 64px;
@@ -1706,14 +1715,26 @@ body {
 }
 .footer .footer-info .logo {
   width: 50%;
-  font-weight: 500;
-  font-size: 22px;
-  text-transform: uppercase;
-  color: #fffefa;
+  height: 50px;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-info .logo {
     width: 313px;
+    height: 40px;
+  }
+}
+.footer .footer-info .logo-icon {
+  width: 90%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer .footer-info .logo-icon {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-info .logo-icon {
+    width: 90%;
   }
 }
 .footer .footer-info .footer-menu-wrap {
