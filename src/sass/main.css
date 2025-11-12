@@ -1719,7 +1719,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-info .logo {
-    width: 313px;
+    width: 190px;
     height: 40px;
   }
 }
@@ -1734,7 +1734,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-info .logo-icon {
-    width: 90%;
+    width: 100%;
   }
 }
 .footer .footer-info .footer-menu-wrap {
