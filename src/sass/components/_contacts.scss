@@ -24,7 +24,6 @@
       @media screen and (min-width: 1200px) {
         width: 565px;
         height: 678px;
-        // height: 735px;
       }
     }
 
@@ -42,36 +41,32 @@
         @media screen and (min-width: 768px) {
           font-size: 16px;
           margin-bottom: 25px;
-          // margin-bottom: 55px;
         }
       }
       .section-title {
         width: 305px;
         margin-bottom: 16px;
-        // font-size: 28px;
+
         @extend %sectionTitle;
         @media screen and (min-width: 768px) {
           width: 247px;
           font-size: 38px;
-          //  margin-bottom: 24px;
           margin-bottom: 0;
         }
         @media screen and (min-width: 1200px) {
           width: 100%;
           font-size: 64px;
-          //  margin-bottom: 24px;
           line-height: 1.1;
         }
       }
       .section-text {
         @extend %sectionText;
-        // margin-bottom: 16px;
+
         @media screen and (min-width: 768px) {
           display: none;
         }
         @media screen and (min-width: 1200px) {
           display: block;
-          // margin-bottom: 24px;
           margin-bottom: 0;
           width: 486px;
         }
@@ -82,7 +77,6 @@
         flex-direction: column;
 
         .input-wrap {
-          // height: 53px;
           position: relative;
 
           &:nth-child(4) {
@@ -91,18 +85,10 @@
 
           .form-input {
             height: 53px;
-            // margin-bottom: 16px;
             padding: 16px;
             border: 1px solid $primaryTextColor;
             border-radius: 30px;
             width: 100%;
-
-            // &:focus:invalid {
-            //   border: 2px solid red;
-            // }
-            // &:focus:valid {
-            //   border: 2px solid green;
-            // }
           }
 
           .error-message {
@@ -117,7 +103,6 @@
           .form-area {
             height: 99px;
             width: 100%;
-            // margin-bottom: 16px;
             padding: 16px;
             border: 1px solid $primaryTextColor;
             border-radius: 30px;
@@ -138,7 +123,6 @@
 
           .checkbox-label {
             font-size: 14px;
-            // width: 622px;
             width: 100%;
             line-height: 1.5;
 
@@ -150,10 +134,8 @@
         }
 
         .form-button {
-          // border: 1px solid #000;
           border-radius: 30px;
           padding: 16px 24px;
-          // width: 654px;
           height: 54px;
           background: $buttonBgColor;
 

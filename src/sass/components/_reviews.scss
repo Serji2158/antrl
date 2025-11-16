@@ -35,7 +35,7 @@
       @media screen and (min-width: 768px) {
         font-size: 36px;
         line-height: 1.15;
-        margin-bottom: 32px;      
+        margin-bottom: 32px;
       }
       @media screen and (min-width: 1200px) {
         width: 412px;
@@ -75,8 +75,6 @@
     &-item {
       .reviews {
         display: flex;
-        // flex-direction: column;
-        // row-gap: 16px;
 
         @media screen and (min-width: 768px) {
           flex-direction: row;
@@ -109,7 +107,6 @@
       }
 
       &:not(:first-child) {
-        //  margin-left: 20px;
         @media screen and (min-width: 1200px) {
           margin-left: 20px;
         }

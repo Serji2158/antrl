@@ -18,9 +18,7 @@
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      // column-gap: 56px;
-      column-gap: 189px;
-      // margin-bottom: 64px;
+       column-gap: 189px;      
     }
 
     .section-content {
@@ -75,9 +73,7 @@
       }
     }
     .section-info {
-      // @media screen and (min-width: 768px) {
-
-      // }
+  
       @media screen and (min-width: 1200px) {
         width: 431px;
         padding-top: 42px;
@@ -112,8 +108,7 @@
 
         &:hover .contact-link-arrow {
           background-color: $buttonBgColor;
-          // outline: 1px solid $buttonBgColor;
-          box-shadow: 0 4px 16px #faa5073e;
+                    box-shadow: 0 4px 16px #faa5073e;
         }
         &:active .contact-link-arrow {
           background-color: $activeButtonBgColor;
