@@ -1,10 +1,8 @@
 User-agent: *
 Allow: /
 
-# Заборона для технічних директорій
 Disallow: /wp-admin/
 Disallow: /cgi-bin/
 Disallow: /tmp/
 
-# Карта сайту
 Sitemap: https://antremodel.com/sitemap.xml
