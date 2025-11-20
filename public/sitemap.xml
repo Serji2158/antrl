@@ -6,12 +6,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://antremodel.com/privacy/privacy.html</loc>
+    <loc>https://antremodel.com/privacy/</loc>
     <priority>0.2</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://antremodel.com/terms/terms.html</loc>
+    <loc>https://antremodel.com/terms/</loc>
     <priority>0.2</priority>
     <changefreq>yearly</changefreq>
   </url>
